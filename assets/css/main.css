@@ -1847,6 +1847,7 @@ section,
 
 .project-swiper-main {
   width: 100%;
+  height: 340px;
   border-radius: 10px;
   overflow: hidden;
   background: var(--surface-color);
@@ -1854,6 +1855,7 @@ section,
 }
 
 .project-swiper-main .swiper-slide {
+  height: 340px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1862,7 +1864,7 @@ section,
 
 .project-swiper-main .swiper-slide img {
   width: 100%;
-  height: 340px;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
@@ -1904,7 +1906,8 @@ section,
 }
 
 @media (max-width: 576px) {
-  .project-swiper-main .swiper-slide img {
+  .project-swiper-main,
+  .project-swiper-main .swiper-slide {
     height: 210px;
   }
 
