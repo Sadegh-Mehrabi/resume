@@ -1,550 +1,1258 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Sadegh Mehrabi</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Sadegh Mehrabi</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com" rel="preconnect" />
+		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- Vendor CSS Files -->
+		<link
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+		<!-- Main CSS File -->
+		<link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+		<!-- =======================================================
   * Template Name: Craftivo
   * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
   * Updated: Oct 04 2025 with Bootstrap v5.3.8
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+	</head>
 
-<body class="index-page">
+	<body class="index-page">
+		<header id="header" class="header d-flex align-items-center fixed-top">
+			<div
+				class="container-fluid container-xl position-relative d-flex align-items-center"
+			>
+				<a href="index.html" class="logo d-flex align-items-center me-auto">
+					<!-- Uncomment the line below if you also wish to use an image logo -->
+					<!-- <img src="assets/img/logo.webp" alt=""> -->
+				</a>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+				<nav id="navmenu" class="navmenu">
+					<ul>
+						<li><a href="#hero" class="active">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li class="dropdown">
+							<a href="#"
+								><span>Projects</span>
+								<i class="bi bi-chevron-down toggle-dropdown"></i
+							></a>
+							<ul>
+								<li>
+									<a href="#mobile-mapping-system">Mobile mapping system</a>
+								</li>
+								<li>
+									<a href="#medical-auto-sampler">Medical Auto Sampler</a>
+								</li>
+								<li><a href="#arinc429-converter">ARINC429 converter</a></li>
+								<li>
+									<a href="#ev-onboard-converter">EV onboard converter</a>
+								</li>
+								<li><a href="#ahrs-system">AHRS</a></li>
+							</ul>
+						</li>
+					</ul>
+					<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+				</nav>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-      </a>
+				<a class="btn-getstarted" href="#about">Get Started</a>
+			</div>
+		</header>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#mobile-mapping-system">Mobile mapping system</a></li>
-              <li><a href="#medical-auto-sampler">Medical Auto Sampler</a></li>
-              <li><a href="#arinc429-converter">ARINC429 converter</a></li>
-              <li><a href="#ev-onboard-converter">EV onboard converter</a></li>
-              <li><a href="#ahrs-system">AHRS</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+		<main class="main">
+			<!-- Hero Section -->
+			<section id="hero" class="hero section dark-background">
+				<img
+					src="assets/img/profile/profile-bg-5.webp"
+					alt=""
+					data-aos="fade-in"
+				/>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+				<div class="container" data-aos="fade-up" data-aos-delay="100">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 text-center">
+							<h2>Sadegh Mehrabi</h2>
+							<p>
+								I'm a
+								<span
+									class="typed"
+									data-typed-items="Embedded System Engineer , C++ Developer , .NET Developer"
+								></span
+								><span class="typed-cursor" aria-hidden="true"></span>
+							</p>
+							<div class="social-links">
+								<a href="tel:+989171456706"><i class="bi bi-telephone"></i></a>
+								<a href="mailto:s.mehrabi@aut.ac.ir" target="_blank"
+									><i class="bi bi-envelope"></i
+								></a>
+								<a href="https://t.me/Sadegh_M_Si" target="_blank"
+									><i class="bi bi-telegram"></i
+								></a>
+								<a href="https://www.linkedin.com/in/smehrabi" target="_blank"
+									><i class="bi bi-linkedin"></i
+								></a>
+								<a href="https://github.com/Sadegh-Mehrabi" target="_blank"
+									><i class="bi bi-github"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Hero Section -->
 
-    </div>
-  </header>
+			<!-- About Section -->
+			<section id="about" class="about section">
+				<!-- Section Title -->
+				<div class="container section-title" data-aos="fade-up">
+					<span class="subtitle">About Me</span>
+					<h2>About Me</h2>
+					<p
+						style="
+							text-align: justify;
+							text-justify: inter-word;
+							line-height: 1.7;
+						"
+					>
+						Embedded System Engineer with over
+						<b style="color: var(--accent-color)">
+							<span id="experienceYrID"></span> </b
+						>years of experience in
+						<b
+							>Firmware Development, Embedded C/C++, RTOS, Bare-Metal
+							Programming</b
+						>
+						for microcontroller-based systems. Experienced in hardware–software
+						integration, communication protocols, and real-time data processing.
+						Familiar with sensor-based systems, system validation, and
+						cross-domain development including firmware, hardware interfacing,
+						and tooling. Uses structured coding styles including
+						<b>CamelCase </b> and <b>snake_case</b> naming conventions depending
+						on project requirements, with consistent C/C++ code formatting,
+						modular design principles, and <b> MISRA C/C++</b> guidelines for
+						<b> safety-critical</b>safety-critical embedded software.
+					</p>
+					<script>
+						window.onload = function () {
+							const startyear = 2018;
+							const currentYear = new Date().getFullYear();
+							const expYr = currentYear - startyear;
+							document.getElementById("experienceYrID").textContent = expYr;
+							document.getElementById("experienceYrID2").textContent =
+								"+" + expYr;
+						};
+					</script>
+				</div>
+				<!-- End Section Title -->
 
-  <main class="main">
+				<div class="container" data-aos="fade-up" data-aos-delay="100">
+					<div class="row gy-5">
+						<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+							<div class="profile-card">
+								<div class="profile-header">
+									<div class="profile-avatar">
+										<img
+											src="assets/img/profile/profile-square-3.webp"
+											class="img-fluid"
+											alt=""
+										/>
+										<div class="status-indicator"></div>
+									</div>
+									<h3>Sadegh Mehrabi</h3>
+									<span class="role">Senior Embedded Software Developer</span>
+								</div>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+								<div class="profile-actions">
+									<a
+										href="assets/download/Sadegh.Mehrabi.CV.pdf"
+										class="btn-primary"
+										download="Sadegh.Mehrabi.CV.pdf"
+										target="_blank"
+										rel="noopener noreferrer"
+										><i class="bi bi-download"></i> Download Resume</a
+									>
+								</div>
 
-      <img src="assets/img/profile/profile-bg-5.webp" alt="" data-aos="fade-in">
+								<div class="social-connect">
+									<a href="tel:+989171456706"
+										><i class="bi bi-telephone"></i
+									></a>
+									<a href="mailto:s.mehrabi@aut.ac.ir" target="_blank"
+										><i class="bi bi-envelope"></i
+									></a>
+									<a href="https://t.me/Sadegh_M_Si" target="_blank"
+										><i class="bi bi-telegram"></i
+									></a>
+									<a href="https://www.linkedin.com/in/smehrabi" target="_blank"
+										><i class="bi bi-linkedin"></i
+									></a>
+									<a href="https://github.com/Sadegh-Mehrabi" target="_blank"
+										><i class="bi bi-github"></i
+									></a>
+								</div>
+							</div>
+						</div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2>Sadegh Mehrabi</h2>
-            <p>I'm a <span class="typed" data-typed-items="Senior Embedded Engineer , Senior Hardware Engineer, Senior C++ Engineer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="tel:+989171456706"><i class="bi bi-telephone"></i></a>
-              <a href="mailto:s.mehrabi@aut.ac.ir" target="_blank"><i class="bi bi-envelope"></i></a>
-              <a href="https://t.me/Sadegh_M_Si" target="_blank"><i class="bi bi-telegram"></i></a>
-              <a href="https://www.linkedin.com/in/smehrabi" target="_blank"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/Sadegh-Mehrabi" target="_blank"><i class="bi bi-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+						<div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+							<div class="content-wrapper">
+								<div class="bio-section">
+									<h2>Senior Embedded Software Developer</h2>
+								</div>
 
-    </section><!-- /Hero Section -->
+								<div class="details-grid">
+									<div
+										class="detail-item"
+										data-aos="fade-up"
+										data-aos-delay="250"
+									>
+										<i class="bi bi-briefcase"></i>
+										<div class="detail-content">
+											<span>Experience</span>
+											<strong>8+ Years</strong>
+										</div>
+									</div>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <span class="subtitle">About Me</span>
-          <h2>About Me</h2>
-          <p style="text-align: justify; text-justify: inter-word; line-height: 1.7;">
-            As a Senior embedded developer with over 
-            <b style="color: var(--accent-color);">
-                <span id="experienceYrID"></span>
-            </b> 
-            years of experience, I have collaborated with various companies on diverse projects across multiple fields and platforms. I specialize in 
-            <b>embedded</b> development, including modern C++ standards, and have strong expertise in 
-            <b>RTOS</b> and <b>Bare metal</b>.
-        </p>
-          <script>
-              window.onload = function() {
-                  const startyear = 2018;
-                  const currentYear = new Date().getFullYear();
-                  const expYr = currentYear - startyear;
-                  document.getElementById("experienceYrID").textContent = expYr;
-                  document.getElementById("experienceYrID2").textContent = "+" + expYr;
-              };
-          </script>
-      </div>
-      <!-- End Section Title -->
+									<div
+										class="detail-item"
+										data-aos="fade-up"
+										data-aos-delay="300"
+									>
+										<i class="bi bi-mortarboard"></i>
+										<div class="detail-content">
+											<span>Degree</span>
+											<strong>Master of Science</strong>
+										</div>
+									</div>
 
+									<div
+										class="detail-item"
+										data-aos="fade-up"
+										data-aos-delay="100"
+									>
+										<i class="bi bi-envelope"></i>
+										<div class="detail-content">
+											<span>Email</span>
+											<strong>s.mehrabi@aut.ac.ir</strong>
+										</div>
+									</div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+									<div
+										class="detail-item"
+										data-aos="fade-up"
+										data-aos-delay="150"
+									>
+										<i class="bi bi-phone"></i>
+										<div class="detail-content">
+											<span>Phone</span>
+											<strong>+989171456706</strong>
+										</div>
+									</div>
 
-        <div class="row gy-5">
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
-            <div class="profile-card">
-              <div class="profile-header">
-                <div class="profile-avatar">
-                  <img src="assets/img/profile/profile-square-3.webp" class="img-fluid" alt="">
-                  <div class="status-indicator"></div>
-                </div>
-                <h3>Sadegh Mehrabi</h3>
-                <span class="role">Senior Embedded Software Developer</span>
-              </div>
+									<div
+										class="detail-item"
+										data-aos="fade-up"
+										data-aos-delay="200"
+									>
+										<i class="bi bi-calendar-check"></i>
+										<div class="detail-content">
+											<span>Availability</span>
+											<strong>Open to Work</strong>
+										</div>
+									</div>
+								</div>
 
-              <div class="profile-actions">
-                <a href="assets/download/Sadegh.Mehrabi.CV.pdf" class="btn-primary" download="Sadegh.Mehrabi.CV.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-download"></i> Download CV</a>
-              </div>
+								<div
+									class="skills-showcase"
+									data-aos="fade-up"
+									data-aos-delay="250"
+								>
+									<div class="section-tag">Core Skills</div>
+									<h3>Technical Proficiency</h3>
 
-              <div class="social-connect">
-                <a href="tel:+989171456706"><i class="bi bi-telephone"></i></a>
-                <a href="mailto:s.mehrabi@aut.ac.ir" target="_blank"><i class="bi bi-envelope"></i></a>
-                <a href="https://t.me/Sadegh_M_Si" target="_blank"><i class="bi bi-telegram"></i></a>
-                <a href="https://www.linkedin.com/in/smehrabi" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/Sadegh-Mehrabi" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-          </div>
+									<div class="skills-list skills-animation">
+										<div class="skill-item">
+											<div class="skill-info">
+												<span class="skill-name"
+													>C/C++ &amp; RTOS (FreeRTOS)</span
+												>
+												<span class="skill-percent">90%</span>
+											</div>
+											<div class="progress">
+												<div
+													class="progress-bar"
+													role="progressbar"
+													aria-valuenow="90"
+													aria-valuemin="0"
+													aria-valuemax="100"
+												></div>
+											</div>
+										</div>
 
-          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
-            <div class="content-wrapper">
-              <div class="bio-section">
-                <h2>Senior Embedded Software Developer</h2>
-              </div>
+										<div class="skill-item">
+											<div class="skill-info">
+												<span class="skill-name"
+													>GitLab CI/CD &amp; Version Control(git/GitHub/GitLab)
+													&amp; C#/.NET</span
+												>
+												<span class="skill-percent">80%</span>
+											</div>
+											<div class="progress">
+												<div
+													class="progress-bar"
+													role="progressbar"
+													aria-valuenow="80"
+													aria-valuemin="0"
+													aria-valuemax="100"
+												></div>
+											</div>
+										</div>
 
-              <div class="details-grid">
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
-                  <i class="bi bi-briefcase"></i>
-                  <div class="detail-content">
-                    <span>Experience</span>
-                    <strong>8+ Years</strong>
-                  </div>
-                </div>
+										<div class="skill-item">
+											<div class="skill-info">
+												<span class="skill-name"
+													>Schematic &amp; PCB Layout</span
+												>
+												<span class="skill-percent">70%</span>
+											</div>
+											<div class="progress">
+												<div
+													class="progress-bar"
+													role="progressbar"
+													aria-valuenow="70"
+													aria-valuemin="0"
+													aria-valuemax="100"
+												></div>
+											</div>
+										</div>
 
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-mortarboard"></i>
-                  <div class="detail-content">
-                    <span>Degree</span>
-                    <strong>Master of Science</strong>
-                  </div>
-                </div>
+										<div class="skill-item">
+											<div class="skill-info">
+												<span class="skill-name"
+													>JavaScript &amp; HTML/CSS</span
+												>
+												<span class="skill-percent">40%</span>
+											</div>
+											<div class="progress">
+												<div
+													class="progress-bar"
+													role="progressbar"
+													aria-valuenow="40"
+													aria-valuemin="0"
+													aria-valuemax="100"
+												></div>
+											</div>
+										</div>
 
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-envelope"></i>
-                  <div class="detail-content">
-                    <span>Email</span>
-                    <strong>s.mehrabi@aut.ac.ir</strong>
-                  </div>
-                </div>
+										<div class="skill-item">
+											<div class="skill-info">
+												<span class="skill-name"
+													>Matlab &amp; Testing(Unit test , Integrate
+													test)</span
+												>
+												<span class="skill-percent">50%</span>
+											</div>
+											<div class="progress">
+												<div
+													class="progress-bar"
+													role="progressbar"
+													aria-valuenow="50"
+													aria-valuemin="0"
+													aria-valuemax="100"
+												></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="row skills-content skills-animation familiarSkills"
+									style="margin-top: 35px"
+								>
+									<h4 style="font-weight: bold">Adaptable Skills</h4>
+									<p class="skill-item skill-info skill-name">
+										RTOS (ThreadX, Zephyr), BSP & Device Driver Development, ARM
+										Cortex-M/Cortex-R, TI-DSP, STM32, ESP32,
+										UART/SPI/I2C/CAN/USB, TCP/IP, Socket Programming, MQTT,
+										Modbus, Hardware–Software Integration, PCB Bring-Up,
+										Low-Level Debugging, JTAG/SWD, Cross-Platform Development,
+										C#/.NET, WPF, MAUI, Blazor, MVVM Architecture, REST APIs,
+										GraphQL, RabbitMQ, SQLite, JSON/XML/YAML, Unit Testing,
+										Google Test/gMock, xUnit, Mock Testing (Moq), Docker, CMake,
+										Linker, Agile/Scrum, System Architecture Design, Performance
+										Optimization, Technical Troubleshooting
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /About Section -->
 
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
-                  <i class="bi bi-phone"></i>
-                  <div class="detail-content">
-                    <span>Phone</span>
-                    <strong>+989171456706</strong>
-                  </div>
-                </div>
+			<!-- Resume Section -->
+			<section id="resume" class="resume section">
+				<!-- Section Title -->
+				<div class="container section-title" data-aos="fade-up">
+					<span class="subtitle">Resume</span>
+					<h2>Resume</h2>
+					<p
+						style="
+							text-align: justify;
+							text-justify: inter-word;
+							line-height: 1.55;
+						"
+					>
+						Experienced Embedded Software Engineer with a proven record of
+						developing robust, scalable, and high-performance applications.
+						Proficient in multiple programming languages and frameworks. Adept
+						at collaborating with cross-functional teams to deliver innovative
+						solutions. Seeking to leverage expertise in embedded systems and
+						cross-platform software development to drive technological
+						advancement.
+					</p>
+				</div>
+				<!-- End Section Title -->
 
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-calendar-check"></i>
-                  <div class="detail-content">
-                    <span>Availability</span>
-                    <strong>Open to Work</strong>
-                  </div>
-                </div>
-              </div>
+				<div class="container" data-aos="fade-up" data-aos-delay="100">
+					<div class="row gy-5">
+						<div class="col-lg-6">
+							<div class="experience-section">
+								<div
+									class="section-header"
+									data-aos="fade-right"
+									data-aos-delay="200"
+								>
+									<div class="header-content">
+										<span class="section-badge">Experience</span>
+										<h2>Professional Experience</h2>
+									</div>
+								</div>
 
-              <div class="skills-showcase" data-aos="fade-up" data-aos-delay="250">
-                <div class="section-tag">Core Skills</div>
-                <h3>Technical Proficiency</h3>
+								<div class="experience-cards">
+									<div
+										class="exp-card featured"
+										data-aos="zoom-in"
+										data-aos-delay="300"
+									>
+										<div class="card-header">
+											<div class="company-logo">
+												<i class="bi bi-laptop"></i>
+											</div>
+											<div class="period-badge">Current</div>
+										</div>
+										<div class="card-body">
+											<h3>Firmware & Software developer</h3>
+											<p class="company-name">
+												Luminocity AG Co, Switzerland (Remote)
+											</p>
+											<span class="duration">2023 - Present (full time)</span>
+											<p class="description">
+												Developed real-time data acquisition and processing
+												systems for multi-sensor devices (GNSS, IMU,
+												magnetometer, barometer, and camera triggers), handling
+												synchronized sensor streams using
+												<strong>FreeRTOS</strong> with more than
+												<strong>30</strong>concurrent tasks.
+											</p>
+											<div class="skills-tags">
+												<span class="skill-tag">Embedded</span>
+												<span class="skill-tag">Embedded C++</span>
+												<span class="skill-tag">GitLabCI/CD</span>
+											</div>
+										</div>
+									</div>
 
-                <div class="skills-list skills-animation">
-                  <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">C/C++ &amp; RTOS (FreeRTOS)</span>
-                      <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
+									<div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
+										<div class="card-header">
+											<div class="company-logo">
+												<i class="bi bi-laptop"></i>
+											</div>
+										</div>
+										<div class="card-body">
+											<h3>Software developer & Hardware designer</h3>
+											<p class="company-name">
+												PishroEdehAraz Co, Tehran, Iran
+											</p>
+											<span class="duration">2020 - 2023 (full time)</span>
+											<p class="description">
+												Developed embedded firmware using FreeRTOS for real-time
+												control and communication systems, including
+												<strong>Modbus TCP/RTU</strong> interfaces for
+												<strong>ARINC 429</strong>converters and throttle
+												control systems using <strong>ARM Cortex-M7</strong>.
+											</p>
+										</div>
+									</div>
 
-                  <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">GitLab CI/CD &amp; Version Control(git/GitHub/GitLab) &amp; C#/.NET</span>
-                      <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
+									<div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+										<div class="card-header">
+											<div class="company-logo">
+												<i class="bi bi-laptop"></i>
+											</div>
+										</div>
+										<div class="card-body">
+											<h3>Firmware developer & Hardware designer</h3>
+											<p class="company-name">AradSharif Co, Tehran, Iran</p>
+											<span class="duration">2018 - 2020 (Part time)</span>
+											<p class="description">
+												Implemented Ethernet communication protocols including
+												<strong
+													>TCP, UDP, IP, and ICMP on STM32 microcontrollers
+													using LwIP and RL-TCPnet stacks</strong
+												>.
+											</p>
+										</div>
+									</div>
 
-                  <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">Schematic &amp; PCB Layout</span>
-                      <span class="skill-percent">70%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
+									<div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+										<div class="card-header">
+											<div class="company-logo">
+												<i class="bi bi-laptop"></i>
+											</div>
+										</div>
+										<div class="card-body">
+											<h3>Embedded software developer & Hardware designer</h3>
+											<p class="company-name">Kharazmi Co, Tehran, Iran</p>
+											<span class="duration">2016 - 2020 (Part time)</span>
+											<p class="description">
+												Led definition, design, delegation, and implementation
+												of embedded hardware solutions for AHRS (Attitude and
+												Heading Reference Systems) with accuracy of
+												<strong>0.1°</strong> in <strong>roll</strong> and
+												<strong>pitch</strong> and <strong>0.5°</strong> in yaw.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                  <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">JavaScript &amp; HTML/CSS</span>
-                      <span class="skill-percent">40%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
+						<div class="col-lg-6">
+							<div class="education-section">
+								<div
+									class="section-header"
+									data-aos="fade-left"
+									data-aos-delay="200"
+								>
+									<div class="header-content">
+										<span class="section-badge">Education</span>
+										<h2>Academic Background</h2>
+									</div>
+								</div>
 
-                  <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">Matlab &amp; Testing(Unit test , Integrate test)</span>
-                      <span class="skill-percent">50%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row skills-content skills-animation familiarSkills" style="margin-top: 35px;">
-                <h4 style="font-weight: bold;">Adaptable Skills</h4>
-                <p class="skill-item skill-info skill-name">RTOS (ThreadX, Zephyr), BSP & Device Driver Development, ARM Cortex-M/Cortex-R, TI-DSP, STM32, ESP32, UART/SPI/I2C/CAN/USB, TCP/IP, Socket Programming, MQTT, Modbus, Hardware–Software Integration, PCB Bring-Up, Low-Level Debugging, JTAG/SWD, Cross-Platform Development, C#/.NET, WPF, MAUI, Blazor, MVVM Architecture, REST APIs, GraphQL, RabbitMQ, SQLite, JSON/XML/YAML, Unit Testing, Google Test/gMock, xUnit, Mock Testing (Moq), Docker, CMake, Linker, Agile/Scrum, System Architecture Design, Performance Optimization, Technical Troubleshooting</p>
-            </div>
-            </div>
-          </div>
-        </div>
+								<div
+									class="education-timeline"
+									data-aos="fade-left"
+									data-aos-delay="300"
+								>
+									<div class="timeline-track">
+										<div class="timeline-item">
+											<div class="timeline-marker">
+												<i class="bi bi-mortarboard-fill"></i>
+											</div>
+											<div class="timeline-content">
+												<div class="education-meta">
+													<span class="year-range">2015 - 2018</span>
+													<span class="degree-level">Masters</span>
+												</div>
+												<h4>
+													Master of Science: Electrical Engineering -
+													<b>Control</b>
+												</h4>
+												<p class="institution">
+													<em
+														>Amirkabir University of Technology (Tehran
+														Polytechnic), Tehran, Iran
+													</em>
+												</p>
+												<!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p> -->
+												<div class="achievement">
+													<i class="bi bi-award"></i>
+													<span
+														><strong>GPA: 17.7/20 via 32 credits</strong>
+														<b>Ranked 4th in Electrical Engineering</b></span
+													>
+												</div>
+											</div>
+										</div>
 
-      </div>
+										<div class="timeline-item">
+											<div class="timeline-marker">
+												<i class="bi bi-book"></i>
+											</div>
+											<div class="timeline-content">
+												<div class="education-meta">
+													<span class="year-range">2010 - 2014</span>
+													<span class="degree-level">Bachelor</span>
+												</div>
+												<h4>
+													Bachelor of Science: Electrical Engineering -
+													<b>Control</b>
+												</h4>
+												<p class="institution">
+													Qom University Of Technology, Qom, Iran
+												</p>
+												<!--   <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
+												<div class="achievement">
+													<i class="bi bi-award"></i>
+													<span
+														><strong>GPA: 17.95/20 (141 credits)</strong>
+														<b>Ranked 1th in Electrical Engineering</b></span
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Resume Section -->
 
-    </section><!-- /About Section -->
+			<!-- Projects Section -->
+			<section id="projects" class="projects section">
+				<div class="container section-title" data-aos="fade-up">
+					<span class="subtitle">Notable Projects</span>
+					<h2>Notable Projects</h2>
+				</div>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+				<div class="container">
+					<div class="projects-stack">
+						<article
+							id="mobile-mapping-system"
+							class="project-card"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<div class="project-card__inner">
+								<div class="project-card__content">
+									<div class="project-card__meta">
+										<span class="project-card__year">2025</span>
+										<span class="project-card__tag"
+											>Embedded · Desktop · Hardware</span
+										>
+									</div>
+									<h3 class="project-card__title">Mobile mapping system</h3>
+									<div class="project-card__body">
+										<p>
+											Experienced as a <strong>Firmware Developer</strong>,
+											<strong>Desktop Application Developer</strong>, and
+											<strong>Hardware Team Lead</strong> in the development of
+											a high-precision real-time aerial mapping and navigation
+											system based on dual-core
+											<strong>STM32H7</strong> microcontrollers. Developed
+											embedded firmware using <strong>FreeRTOS</strong> with
+											more than 30 concurrent real-time tasks executing under
+											microsecond-level timing constraints. Integrated multiple
+											sensors including <strong>accelerometers</strong>,
+											<strong>gyroscopes</strong>,
+											<strong>magnetometers</strong>,
+											<strong>barometers</strong>, and dual
+											<strong>GNSS</strong> modules to achieve accurate
+											positioning and orientation estimation for aerial mapping
+											applications.
+										</p>
+										<p>
+											Implemented high-speed interrupt-based data acquisition
+											and synchronized sensor logging to SD card storage,
+											alongside external flash memory management for system
+											configuration and parameters. Designed and integrated
+											communication interfaces including
+											<strong>Bluetooth</strong>, <strong>Wi-Fi</strong>, and
+											<strong>Ethernet (LAN)</strong> for real-time connectivity
+											and data transfer. Developed precise multi-camera
+											synchronization and triggering mechanisms supporting up to
+											<strong>6 simultaneous cameras</strong> for aerial
+											photogrammetry and 2D mapping generation.
+										</p>
+										<p>
+											In parallel, developed Windows desktop applications using
+											<strong>.NET Blazor</strong>, <strong>C#</strong>,
+											<strong>JavaScript</strong>, <strong>HTML/CSS</strong>,
+											and <strong>SQLite</strong> for real-time monitoring,
+											visualization, processing, and analysis of sensor and
+											navigation data. Also led hardware development activities
+											including system architecture, hardware integration,
+											debugging, and coordination of embedded hardware design
+											tasks, with strong focus on real-time reliability,
+											synchronization accuracy, and high-performance system
+											operation.
+										</p>
+									</div>
+									<div class="project-gallery">
+										<img
+											src="assets/img/projects/mobile-mapping-system/img-1.jpg"
+											alt="Mobile mapping system – overview"
+										/>
+										<img
+											src="assets/img/projects/mobile-mapping-system/img-2.jpg"
+											alt="Mobile mapping system – overview"
+										/>
+										<img
+											src="assets/img/projects/mobile-mapping-system/img-3.jpg"
+											alt="Mobile mapping system – PCB"
+										/>
+										<img
+											src="assets/img/projects/mobile-mapping-system/img-4.jpg"
+											alt="Mobile mapping system – PCB"
+										/>
+										<img
+											src="assets/img/projects/mobile-mapping-system/img-5.jpg"
+											alt="Mobile mapping system – desktop application"
+										/>
+										<img
+											src="assets/img/projects/mobile-mapping-system/img-6.jpg"
+											alt="Mobile mapping system – desktop application"
+										/>
+										<img
+											src="assets/img/projects/mobile-mapping-system/img-7.jpg"
+											alt="Mobile mapping system – desktop application"
+										/>
+									</div>
+								</div>
+							</div>
+						</article>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Resume</span>
-        <h2>Resume</h2>
-        <p style="text-align: justify; text-justify: inter-word; line-height: 1.55;">
-          Experienced Embedded Software Engineer with a proven record of developing robust, scalable, and high-performance applications. 
-          Proficient in multiple programming languages and frameworks. Adept at collaborating with cross-functional teams to deliver innovative solutions. 
-          Seeking to leverage expertise in embedded systems and cross-platform software development to drive technological advancement.
-      </p>
-      </div><!-- End Section Title -->
+						<article
+							id="medical-auto-sampler"
+							class="project-card"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<div class="project-card__inner">
+								<div class="project-card__content">
+									<div class="project-card__meta">
+										<span class="project-card__year">2024</span>
+										<span class="project-card__tag"
+											>Medical · Firmware · Hardware · IEC 62304</span
+										>
+									</div>
+									<h3 class="project-card__title">
+										Medical Auto Sampler system aligned with IEC 62304
+									</h3>
+									<div class="project-card__body">
+										<p>
+											Worked as <strong>Firmware Developer</strong> and
+											<strong>Hardware Designer</strong> in the development of
+											an automated medical autosampler system for laboratory
+											blood sample processing. Designed the embedded hardware
+											and developed firmware in
+											<strong>Embedded C++</strong> based on
+											<strong>STM32F4</strong> microcontrollers using
+											<strong>FreeRTOS</strong> for reliable real-time
+											operation. The system included a custom mechanical
+											platform capable of holding up to
+											<strong>30 blood sample tubes</strong> and performing
+											fully automated sample handling workflows.
+										</p>
+										<p>
+											Integrated a <strong>touchscreen</strong> user interface
+											and <strong>USB HID keyboard</strong> connectivity,
+											allowing operators to configure sample quantities and
+											control the sampling process efficiently. Implemented
+											<strong>RS232</strong> communication with
+											<strong>ProLYTE</strong> medical analysis devices,
+											enabling automated command transmission, synchronization
+											with sampling operations, and retrieval of analysis
+											results directly from the laboratory equipment. Developed
+											reliable data management functionality with storage
+											capacity for up to
+											<strong>300 patient records</strong> and test results.
+										</p>
+										<p>
+											The project required robust real-time task management,
+											hardware–software integration, and stable serial
+											communication to ensure accurate and uninterrupted medical
+											laboratory operation. Development practices were aligned
+											with <strong>IEC 62304</strong> expectations for medical
+											device software lifecycle processes. The system was
+											successfully manufactured and deployed in large quantities
+											for laboratory and medical diagnostic environments.
+										</p>
+									</div>
+									<div class="project-gallery">
+										<img
+											src="assets/img/projects/medical-auto-sampler/img-1.jpg"
+											alt="Medical auto sampler – device overview"
+										/>
+										<img
+											src="assets/img/projects/medical-auto-sampler/img-2.jpg"
+											alt="Medical auto sampler – device overview"
+										/>
+										<img
+											src="assets/img/projects/medical-auto-sampler/img-3.jpg"
+											alt="Medical auto sampler – PCB layout"
+										/>
+									</div>
+								</div>
+							</div>
+						</article>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+						<article
+							id="throttle-control-system"
+							class="project-card"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<div class="project-card__inner">
+								<div class="project-card__content">
+									<div class="project-card__meta">
+										<span class="project-card__year">2024</span>
+										<span class="project-card__tag"
+											>Aerospace · Firmware · Hardware · FreeRTOS</span
+										>
+									</div>
+									<h3 class="project-card__title">
+										Electronic Throttle Control System (Aircraft Engine Test
+										Bench)
+									</h3>
+									<div class="project-card__body">
+										<p>
+											Developed an
+											<strong>electronic throttle control system</strong> for
+											<strong>aircraft engine test bench</strong> applications.
+											Designed system hardware including
+											<strong>schematics and PCB layout</strong>, and
+											implemented embedded firmware in
+											<strong>Embedded C++</strong> and
+											<strong>FreeRTOS</strong> for
+											<strong>real-time control</strong> and
+											<strong>data acquisition</strong>.
+										</p>
+										<p>
+											Implemented processing of
+											<strong>throttle position data</strong> using
+											<strong>high-precision angle sensors</strong>, supporting
+											<strong>multiple operating modes</strong> via
+											<strong>digital I/O</strong>.
+										</p>
+										<p>
+											Developed <strong>Ethernet communication</strong> using
+											<strong>Modbus TCP</strong> for command, control, and
+											status monitoring between the throttle system and test
+											infrastructure.
+										</p>
+									</div>
+									<div class="project-gallery">
+										<img
+											src="assets/img/projects/throttle-system/img-1.jpg"
+											alt="Throttle system – system overview"
+										/>
+										<img
+											src="assets/img/projects/throttle-system/img-2.jpg"
+											alt="Throttle system  – system overview"
+										/>
+										<img
+											src="assets/img/projects/throttle-system/img-3.jpg"
+											alt="Throttle system  – hardware board"
+										/>
+										<img
+											src="assets/img/projects/throttle-system/img-4.jpg"
+											alt="Throttle system  – hardware board"
+										/>
+										<img
+											src="assets/img/projects/throttle-system/img-5.jpg"
+											alt="Throttle system  – PCB"
+										/>
+									</div>
+								</div>
+							</div>
+						</article>
 
-        <div class="row gy-5">
-          <div class="col-lg-6">
-            <div class="experience-section">
-              <div class="section-header" data-aos="fade-right" data-aos-delay="200">
-                <div class="header-content">
-                  <span class="section-badge">Experience</span>
-                  <h2>Professional Experience</h2>
-                </div>
-              </div>
+						<article
+							id="ev-converter"
+							class="project-card"
+							data-aos="fade-up"
+							data-aos-delay="400"
+						>
+							<div class="project-card__inner">
+								<div class="project-card__content">
+									<div class="project-card__meta">
+										<span class="project-card__year">2023</span>
+										<span class="project-card__tag"
+											>Automotive · Power Electronics · Firmware</span
+										>
+									</div>
+									<h3 class="project-card__title">
+										Automotive Isolated DC/DC Converter (2.4 kW, 300–400 V to 12
+										V, 200A)
+									</h3>
+									<div class="project-card__body">
+										<p>
+											Developed an
+											<strong>
+												automotive-grade isolated DC/DC converter</strong
+											>
+											for EV applications. Designed full power electronics
+											hardware including schematics, power stage architecture,
+											transformer and inductor design, simulations, and 8-layer
+											PCB layout with focus on
+											<strong>EMC/EMI/ESD </strong> compliance (<strong
+												>ISO 7637</strong
+											>, <strong>ISO 16750</strong>) and functional safety
+											considerations aligned with
+											<strong>ISO 26262</strong> principles requirements for
+											automotive environments.
+										</p>
 
-              <div class="experience-cards">
-                <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-header">
-                    <div class="company-logo">
-                      <i class="bi bi-laptop"></i>
-                    </div>
-                    <div class="period-badge">Current</div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Software developer</h3>
-                    <p class="company-name">Luminocity AG Co, Switzerland (Remote)</p>
-                    <span class="duration">2023 - Present (full time)</span>
-                    <p class="description">Developed real-time data acquisition and processing systems for multi-sensor devices (GNSS, IMU, magnetometer, barometer, and camera triggers), handling synchronized sensor streams using <strong>FreeRTOS</strong>  with more than <strong>30</strong>concurrent tasks.</p>
-                    <div class="skills-tags">
-                      <span class="skill-tag">Embedded</span>
-                      <span class="skill-tag">Embedded C++</span>
-                      <span class="skill-tag">GitLabCI/CD</span>
-                    </div>
-                  </div>
-                </div>
+										<p>
+											Implemented embedded control firmware on
+											<strong>TI C2000 </strong>microcontrollers using a
+											bare-metal architecture for real-time power conversion
+											control. Developed and tuned
+											<strong> digital PID control </strong> loops for voltage
+											and current regulation in high-power switching operation.
+											Utilized
+											<strong>Phase-Shifted Full-Bridge (PSFB) </strong>topology
+											for isolated DC/DC conversion.
+										</p>
 
-                <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
-                  <div class="card-header">
-                    <div class="company-logo">
-                      <i class="bi bi-laptop"></i>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Software developer & Hardware designer</h3>
-                    <p class="company-name">PishroEdehAraz Co, Tehran, Iran</p>
-                    <span class="duration">2020 - 2023 (full time)</span>
-                    <p class="description">Developed embedded firmware using FreeRTOS for real-time control and communication systems, including <strong>Modbus TCP/RTU</strong> interfaces for <strong>ARINC 429</strong>converters and throttle control systems using <strong>ARM Cortex-M7</strong>.</p>
-                  </div>
-                </div>
+										<p>
+											Integrated <strong>CAN 2.0 </strong> communication for
+											system-level monitoring and control.
+										</p>
 
-                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="card-header">
-                    <div class="company-logo">
-                      <i class="bi bi-laptop"></i>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Firmware developer & Hardware designer</h3>
-                    <p class="company-name">AradSharif Co, Tehran, Iran</p>
-                    <span class="duration">2018 - 2020 (Part time)</span>
-                    <p class="description">Implemented Ethernet communication protocols including <strong>TCP, UDP, IP, and ICMP on STM32 microcontrollers using LwIP and RL-TCPnet stacks</strong>.</p>
-                  </div>
-                </div>
+										<p>
+											Developed a desktop test and debugging application
+											interfacing with a CAN gateway for system validation and
+											diagnostics.
+										</p>
+									</div>
+									<div class="project-gallery">
+										<img
+											src="assets/img/projects/ev-converter/img-1.jpg"
+											alt="EV converter – product"
+										/>
+										<img
+											src="assets/img/projects/ev-converter/img-2.jpg"
+											alt="EV converter – board"
+										/>
+										<img
+											src="assets/img/projects/ev-converter/img-3.jpg"
+											alt="EV converter – board"
+										/>
+										<img
+											src="assets/img/projects/ev-converter/img-4.jpg"
+											alt="EV converter – board"
+										/>
+										<img
+											src="assets/img/projects/ev-converter/img-5.jpg"
+											alt="EV converter – 8-layer PCB"
+										/>
+										<img
+											src="assets/img/projects/ev-converter/img-6.jpg"
+											alt="EV converter – test setup"
+										/>
+										<img
+											src="assets/img/projects/ev-converter/img-7.jpg"
+											alt="EV converter – parctical test"
+										/>
+									</div>
+								</div>
+							</div>
+						</article>
 
-                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="card-header">
-                    <div class="company-logo">
-                      <i class="bi bi-laptop"></i>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Embedded software developer & Hardware designer</h3>
-                    <p class="company-name">Kharazmi Co, Tehran, Iran</p>
-                    <span class="duration">2016 - 2020 (Part time)</span>
-                    <p class="description">Led definition, design, delegation, and implementation of embedded hardware solutions for AHRS (Attitude and Heading Reference Systems) with accuracy of <strong>0.1°</strong> in <strong>roll</strong> and <strong>pitch</strong>  and <strong>0.5°</strong> in yaw.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+						<article
+							id="arinc429-converter"
+							class="project-card"
+							data-aos="fade-up"
+							data-aos-delay="300"
+						>
+							<div class="project-card__inner">
+								<div class="project-card__content">
+									<div class="project-card__meta">
+										<span class="project-card__year">2023</span>
+										<span class="project-card__tag"
+											>Aerospace · Firmware · Hardware</span
+										>
+									</div>
+									<h3 class="project-card__title">ARINC429 converter system</h3>
+									<div class="project-card__body">
+										<p>
+											Worked as <strong>Firmware Developer</strong> and
+											<strong>Hardware Designer</strong> in the complete
+											development of a high-speed <strong>ARINC429</strong> to
+											<strong>Modbus TCP</strong> protocol converter for
+											aerospace applications in
+											<strong>Embedded C++</strong> using
+											<strong>STM32H7</strong> microcontrollers. Designed the
+											hardware architecture, schematics, and embedded firmware
+											for a real-time communication system capable of
+											interfacing directly with aircraft ARINC429 buses. The
+											system supported
+											<strong>32 independent ARINC429 receive channels</strong>
+											and <strong>16 transmit channels</strong>, allowing
+											simultaneous communication with multiple aircraft
+											subsystems and engine control units.
+										</p>
+										<p>
+											Implemented high-performance bidirectional data conversion
+											between ARINC429 and Modbus TCP over
+											<strong>100 Mbps Ethernet</strong>, enabling real-time
+											data exchange between desktop software and aircraft
+											engines. Developed the firmware using
+											<strong>FreeRTOS</strong> with approximately
+											<strong>25 concurrent real-time tasks</strong>, with
+											strong focus on deterministic execution, low-latency
+											communication, and zero data loss operation.
+										</p>
+										<p>
+											Designed the system to handle continuous high-speed data
+											streams reliably under strict real-time constraints,
+											ensuring robust synchronization and stable operation in
+											mission-critical aerospace environments.
+										</p>
+									</div>
+									<div class="project-gallery">
+										<img
+											src="assets/img/projects/arinc429-converter/img-1.jpg"
+											alt="ARINC429 converter – system overview"
+										/>
+										<img
+											src="assets/img/projects/arinc429-converter/img-2.jpg"
+											alt="ARINC429 converter – hardware board"
+										/>
+										<img
+											src="assets/img/projects/arinc429-converter/img-3.jpg"
+											alt="ARINC429 converter – PCB"
+										/>
+									</div>
+								</div>
+							</div>
+						</article>
 
-          <div class="col-lg-6">
-            <div class="education-section">
-              <div class="section-header" data-aos="fade-left" data-aos-delay="200">
-                <div class="header-content">
-                  <span class="section-badge">Education</span>
-                  <h2>Academic Background</h2>
-                </div>
-              </div>
+						<article
+							id="ev-onboard-converter"
+							class="project-card"
+							data-aos="fade-up"
+							data-aos-delay="400"
+						>
+							<div class="project-card__inner">
+								<div class="project-card__content">
+									<div class="project-card__meta">
+										<span class="project-card__year">2022</span>
+										<span class="project-card__tag"
+											>Automotive · Power Electronics · Firmware</span
+										>
+									</div>
+									<h3 class="project-card__title">
+										On board converter system for Electric Vehicle
+									</h3>
+									<div class="project-card__body">
+										<p>
+											Worked as <strong>Embedded Software Developer</strong> and
+											<strong>Hardware Designer</strong> in the development of
+											an automotive-grade EV charger supporting single-phase
+											(<strong>3.3 kW</strong>) and three-phase (<strong
+												>10 kW</strong
+											>) operation. Designed full power electronics hardware
+											including schematic design, transformer/inductor
+											calculations, control stage architecture, simulation, and
+											<strong>8-layer PCB layout</strong> with focus on
+											EMC/EMI/ESD compliance (<strong>ISO 7637</strong>,
+											<strong>ISO 16750</strong>) and functional safety
+											considerations aligned with
+											<strong>ISO 26262</strong> principles.
+										</p>
+										<p>
+											Implemented embedded control firmware in
+											<strong>Embedded C++</strong> on
+											<strong>TI C2000</strong> microcontrollers using
+											bare-metal architecture for deterministic real-time
+											performance. Developed and tuned digital control
+											algorithms including <strong>Adaptive PID</strong> for
+											power regulation, applying advanced topologies such as
+											<strong>Phase-Shifted Full-Bridge (PSFB)</strong> and
+											<strong>Interleaved PFC</strong> for efficiency and
+											thermal optimization. Integrated
+											<strong>CAN 2.0</strong> communication (<strong
+												>ISO 11898</strong
+											>) for real-time vehicle–charger interaction and system
+											monitoring.
+										</p>
+										<p>
+											Additionally developed a
+											<strong>Qt Widgets</strong> desktop application for
+											testing, debugging, and validation via serial-to-CAN
+											interface. The project required end-to-end integration of
+											embedded control, power electronics, and communication
+											systems for high-reliability automotive EV charging
+											systems.
+										</p>
+									</div>
+									<div class="project-gallery">
+										<img
+											src="assets/img/projects/ev-onboard-converter/img-1.jpg"
+											alt="EV onboard converter – product"
+										/>
+										<img
+											src="assets/img/projects/ev-onboard-converter/img-2.jpg"
+											alt="EV onboard converter – board"
+										/>
+										<img
+											src="assets/img/projects/ev-onboard-converter/img-3.jpg"
+											alt="EV onboard converter – board"
+										/>
+										<img
+											src="assets/img/projects/ev-onboard-converter/img-4.jpg"
+											alt="EV onboard converter – board"
+										/>
+										<img
+											src="assets/img/projects/ev-onboard-converter/img-5.jpg"
+											alt="EV onboard converter – 8-layer PCB"
+										/>
+										<img
+											src="assets/img/projects/ev-onboard-converter/img-6.jpg"
+											alt="EV onboard converter – test setup"
+										/>
+										<img
+											src="assets/img/projects/ev-onboard-converter/img-7.jpg"
+											alt="EV onboard converter – parctical test"
+										/>
+									</div>
+								</div>
+							</div>
+						</article>
 
-              <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
-                <div class="timeline-track">
-                  <div class="timeline-item">
-                    <div class="timeline-marker">
-                      <i class="bi bi-mortarboard-fill"></i>
-                    </div>
-                    <div class="timeline-content">
-                      <div class="education-meta">
-                        <span class="year-range">2015 - 2018</span>
-                        <span class="degree-level">Masters</span>
-                      </div>
-                      <h4>Master of Science: Electrical Engineering - <b>Control</b></h4>
-                      <p class="institution"><em>Amirkabir University of Technology (Tehran Polytechnic), Tehran, Iran </em></p>
-                     <!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p> --> 
-                      <div class="achievement">
-                        <i class="bi bi-award"></i>
-                        <span><strong>GPA: 17.7/20 via 32 credits</strong> <b>Ranked 4th in Electrical Engineering</b></span>
-                      </div>
-                    </div>
-                  </div>
+						<article
+							id="ahrs-system"
+							class="project-card"
+							data-aos="fade-up"
+							data-aos-delay="500"
+						>
+							<div class="project-card__inner">
+								<div class="project-card__content">
+									<div class="project-card__meta">
+										<span class="project-card__year">2021</span>
+										<span class="project-card__tag"
+											>Navigation · Sensor Fusion · Firmware</span
+										>
+									</div>
+									<h3 class="project-card__title">
+										Attitude and Heading Reference System (AHRS)
+									</h3>
+									<div class="project-card__body">
+										<p>
+											Worked as <strong>Firmware Developer</strong> and
+											<strong>Hardware Designer</strong> in the development of a
+											high-precision <strong>AHRS</strong> (Attitude and Heading
+											Reference System) for real-time orientation and motion
+											estimation applications. Designed the embedded hardware
+											and developed firmware using
+											<strong>Embedded C</strong> and
+											<strong>Bare-Metal</strong> programming for sensor
+											acquisition, signal processing, and real-time attitude
+											estimation using gyroscope, accelerometer, and
+											magnetometer sensor fusion.
+										</p>
+										<p>
+											Implemented advanced estimation and filtering algorithms
+											including <strong>Kalman Filter</strong>–based approaches
+											to accurately calculate <strong>Euler angles</strong>,
+											<strong>quaternions</strong>, and angular velocity under
+											dynamic operating conditions. Developed complex
+											calibration and compensation algorithms for sensor
+											alignment, bias correction, and magnetic calibration to
+											improve long-term stability and measurement accuracy.
+											Designed and integrated desktop software for real-time
+											data visualization, logging, monitoring, and execution of
+											calibration procedures through direct hardware
+											communication.
+										</p>
+										<p>
+											Achieved high-accuracy orientation estimation with roll
+											and pitch accuracy reaching <strong>0.1°</strong> and yaw
+											(heading) accuracy of <strong>0.5°</strong>. The project
+											required strong expertise in embedded systems,
+											mathematical modeling, control systems, real-time signal
+											processing, and hardware–software integration.
+										</p>
+									</div>
+									<div class="project-gallery">
+										<img
+											src="assets/img/projects/ahrs-system/img-1.jpg"
+											alt="AHRS –  product"
+										/>
+										<img
+											src="assets/img/projects/ahrs-system/img-2.jpg"
+											alt="AHRS – board"
+										/>
+										<img
+											src="assets/img/projects/ahrs-system/img-3.jpg"
+											alt="AHRS – board"
+										/>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- /Projects Section -->
+		</main>
 
-                  <div class="timeline-item">
-                    <div class="timeline-marker">
-                      <i class="bi bi-book"></i>
-                    </div>
-                    <div class="timeline-content">
-                      <div class="education-meta">
-                        <span class="year-range">2010 - 2014</span>
-                        <span class="degree-level">Bachelor</span>
-                      </div>
-                      <h4>Bachelor of Science: Electrical Engineering - <b>Control</b></h4>
-                      <p class="institution">Qom University Of Technology, Qom, Iran</p>
-                     <!--   <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> --> 
-                      <div class="achievement">
-                        <i class="bi bi-award"></i>
-                        <span><strong>GPA: 17.95/20 (141 credits)</strong> <b>Ranked 1th in Electrical Engineering</b></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+		<footer id="footer" class="footer site-footer">
+			<div class="container copyright text-center">
+				<p>
+					© <span>Copyright</span> <strong class="px-1">Sadegh Mehrabi</strong>
+					<span>All Rights Reserved</span>
+				</p>
+				<div class="credits">
+					Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+				</div>
+			</div>
+		</footer>
 
-      </div>
+		<!-- Scroll Top -->
+		<a
+			href="#"
+			id="scroll-top"
+			class="scroll-top d-flex align-items-center justify-content-center"
+			><i class="bi bi-arrow-up-short"></i
+		></a>
 
-    </section><!-- /Resume Section -->
+		<!-- Preloader -->
+		<div id="preloader"></div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/aos/aos.js"></script>
+		<script src="assets/vendor/typed.js/typed.umd.js"></script>
+		<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-      <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Notable Projects</span>
-        <h2>Notable Projects</h2>
-      </div>
-
-      <div class="container">
-        <div class="projects-stack">
-
-        <article id="mobile-mapping-system" class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-card__inner">
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span class="project-card__year">2025</span>
-                <span class="project-card__tag">Embedded · Desktop · Hardware</span>
-              </div>
-              <h3 class="project-card__title">Mobile mapping system</h3>
-              <div class="project-card__body">
-                <p>Experienced as a <strong>Firmware Developer</strong>, <strong>Desktop Application Developer</strong>, and <strong>Hardware Team Lead</strong> in the development of a high-precision real-time aerial mapping and navigation system based on dual-core <strong>STM32H7</strong> microcontrollers. Developed embedded firmware using <strong>FreeRTOS</strong> with more than 30 concurrent real-time tasks executing under microsecond-level timing constraints. Integrated multiple sensors including <strong>accelerometers</strong>, <strong>gyroscopes</strong>, <strong>magnetometers</strong>, <strong>barometers</strong>, and dual <strong>GNSS</strong> modules to achieve accurate positioning and orientation estimation for aerial mapping applications.</p>
-                <p>Implemented high-speed interrupt-based data acquisition and synchronized sensor logging to SD card storage, alongside external flash memory management for system configuration and parameters. Designed and integrated communication interfaces including <strong>Bluetooth</strong>, <strong>Wi-Fi</strong>, and <strong>Ethernet (LAN)</strong> for real-time connectivity and data transfer. Developed precise multi-camera synchronization and triggering mechanisms supporting up to <strong>6 simultaneous cameras</strong> for aerial photogrammetry and 2D mapping generation.</p>
-                <p>In parallel, developed Windows desktop applications using <strong>.NET Blazor</strong>, <strong>C#</strong>, <strong>JavaScript</strong>, <strong>HTML/CSS</strong>, and <strong>SQLite</strong> for real-time monitoring, visualization, processing, and analysis of sensor and navigation data. Also led hardware development activities including system architecture, hardware integration, debugging, and coordination of embedded hardware design tasks, with strong focus on real-time reliability, synchronization accuracy, and high-performance system operation.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article id="medical-auto-sampler" class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card__inner">
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span class="project-card__year">2024</span>
-                <span class="project-card__tag">Medical · Firmware · Hardware · IEC 62304</span>
-              </div>
-              <h3 class="project-card__title">Medical Auto Sampler system aligned with IEC 62304</h3>
-              <div class="project-card__body">
-                <p>Worked as <strong>Firmware Developer</strong> and <strong>Hardware Designer</strong> in the development of an automated medical autosampler system for laboratory blood sample processing. Designed the embedded hardware and developed firmware in <strong>Embedded C++</strong> based on <strong>STM32F4</strong> microcontrollers using <strong>FreeRTOS</strong> for reliable real-time operation. The system included a custom mechanical platform capable of holding up to <strong>30 blood sample tubes</strong> and performing fully automated sample handling workflows.</p>
-                <p>Integrated a <strong>touchscreen</strong> user interface and <strong>USB HID keyboard</strong> connectivity, allowing operators to configure sample quantities and control the sampling process efficiently. Implemented <strong>RS232</strong> communication with <strong>ProLYTE</strong> medical analysis devices, enabling automated command transmission, synchronization with sampling operations, and retrieval of analysis results directly from the laboratory equipment. Developed reliable data management functionality with storage capacity for up to <strong>300 patient records</strong> and test results.</p>
-                <p>The project required robust real-time task management, hardware–software integration, and stable serial communication to ensure accurate and uninterrupted medical laboratory operation. Development practices were aligned with <strong>IEC 62304</strong> expectations for medical device software lifecycle processes. The system was successfully manufactured and deployed in large quantities for laboratory and medical diagnostic environments.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article id="arinc429-converter" class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-card__inner">
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span class="project-card__year">2023</span>
-                <span class="project-card__tag">Aerospace · Firmware · Hardware</span>
-              </div>
-              <h3 class="project-card__title">ARINC429 converter system</h3>
-              <div class="project-card__body">
-                <p>Worked as <strong>Firmware Developer</strong> and <strong>Hardware Designer</strong> in the complete development of a high-speed <strong>ARINC429</strong> to <strong>Modbus TCP</strong> protocol converter for aerospace applications in <strong>Embedded C++</strong> using <strong>STM32H7</strong> microcontrollers. Designed the hardware architecture, schematics, and embedded firmware for a real-time communication system capable of interfacing directly with aircraft ARINC429 buses. The system supported <strong>32 independent ARINC429 receive channels</strong> and <strong>16 transmit channels</strong>, allowing simultaneous communication with multiple aircraft subsystems and engine control units.</p>
-                <p>Implemented high-performance bidirectional data conversion between ARINC429 and Modbus TCP over <strong>100 Mbps Ethernet</strong>, enabling real-time data exchange between desktop software and aircraft engines. Developed the firmware using <strong>FreeRTOS</strong> with approximately <strong>25 concurrent real-time tasks</strong>, with strong focus on deterministic execution, low-latency communication, and zero data loss operation.</p>
-                <p>Designed the system to handle continuous high-speed data streams reliably under strict real-time constraints, ensuring robust synchronization and stable operation in mission-critical aerospace environments.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article id="ev-onboard-converter" class="project-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="project-card__inner">
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span class="project-card__year">2022</span>
-                <span class="project-card__tag">Automotive · Power Electronics · Firmware</span>
-              </div>
-              <h3 class="project-card__title">On board converter system for Electric Vehicle</h3>
-              <div class="project-card__body">
-                <p>Worked as <strong>Embedded Software Developer</strong> and <strong>Hardware Designer</strong> in the development of an automotive-grade EV charger supporting single-phase (<strong>3.3 kW</strong>) and three-phase (<strong>10 kW</strong>) operation. Designed full power electronics hardware including schematic design, transformer/inductor calculations, control stage architecture, simulation, and <strong>8-layer PCB layout</strong> with focus on EMC/EMI/ESD compliance (<strong>ISO 7637</strong>, <strong>ISO 16750</strong>) and functional safety considerations aligned with <strong>ISO 26262</strong> principles.</p>
-                <p>Implemented embedded control firmware in <strong>Embedded C++</strong> on <strong>TI C2000</strong> microcontrollers using bare-metal architecture for deterministic real-time performance. Developed and tuned digital control algorithms including <strong>Adaptive PID</strong> for power regulation, applying advanced topologies such as <strong>Phase-Shifted Full-Bridge (PSFB)</strong> and <strong>Interleaved PFC</strong> for efficiency and thermal optimization. Integrated <strong>CAN 2.0</strong> communication (<strong>ISO 11898</strong>) for real-time vehicle–charger interaction and system monitoring.</p>
-                <p>Additionally developed a <strong>Qt Widgets</strong> desktop application for testing, debugging, and validation via serial-to-CAN interface. The project required end-to-end integration of embedded control, power electronics, and communication systems for high-reliability automotive EV charging systems.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article id="ahrs-system" class="project-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="project-card__inner">
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span class="project-card__year">2021</span>
-                <span class="project-card__tag">Navigation · Sensor Fusion · Firmware</span>
-              </div>
-              <h3 class="project-card__title">Attitude and Heading Reference System (AHRS)</h3>
-              <div class="project-card__body">
-                <p>Worked as <strong>Firmware Developer</strong> and <strong>Hardware Designer</strong> in the development of a high-precision <strong>AHRS</strong> (Attitude and Heading Reference System) for real-time orientation and motion estimation applications. Designed the embedded hardware and developed firmware using <strong>Embedded C</strong> and <strong>Bare-Metal</strong> programming for sensor acquisition, signal processing, and real-time attitude estimation using gyroscope, accelerometer, and magnetometer sensor fusion.</p>
-                <p>Implemented advanced estimation and filtering algorithms including <strong>Kalman Filter</strong>–based approaches to accurately calculate <strong>Euler angles</strong>, <strong>quaternions</strong>, and angular velocity under dynamic operating conditions. Developed complex calibration and compensation algorithms for sensor alignment, bias correction, and magnetic calibration to improve long-term stability and measurement accuracy. Designed and integrated desktop software for real-time data visualization, logging, monitoring, and execution of calibration procedures through direct hardware communication.</p>
-                <p>Achieved high-accuracy orientation estimation with roll and pitch accuracy reaching <strong>0.1°</strong> and yaw (heading) accuracy of <strong>0.5°</strong>. The project required strong expertise in embedded systems, mathematical modeling, control systems, real-time signal processing, and hardware–software integration.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        </div>
-      </div>
-
-    </section><!-- /Projects Section -->
-
-  </main>
-
-  <footer id="footer" class="footer site-footer">
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1">Sadegh Mehrabi</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
-    (function() {
-      const el = document.getElementById('experienceYrID');
-      if (el) el.textContent = String(new Date().getFullYear() - 2018);
-    })();
-  </script>
-
-</body>
-
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<!-- Main JS File -->
+		<script src="assets/js/main.js"></script>
+		<script>
+			(function () {
+				const el = document.getElementById("experienceYrID");
+				if (el) el.textContent = String(new Date().getFullYear() - 2018);
+			})();
+		</script>
+	</body>
 </html>

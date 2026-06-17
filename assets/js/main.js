@@ -196,4 +196,100 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Project image galleries — one independent Swiper per project, driven by
+   * whatever <img> tags the author places inside .project-gallery.
+   */
+  function buildProjectGallery(gallery, images) {
+    // ── Main (large) swiper ──────────────────────────────────────────────────
+    const mainEl = document.createElement('div');
+    mainEl.className = 'swiper project-swiper-main';
+    const mainWrapper = document.createElement('div');
+    mainWrapper.className = 'swiper-wrapper';
+
+    images.forEach(function(img) {
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide';
+      slide.appendChild(img.cloneNode(true));
+      mainWrapper.appendChild(slide);
+    });
+    mainEl.appendChild(mainWrapper);
+
+    gallery.innerHTML = '';
+    gallery.appendChild(mainEl);
+
+    // ── Thumbnail swiper (only when > 1 image) ───────────────────────────────
+    let thumbsInstance = null;
+    if (images.length > 1) {
+      const thumbsEl = document.createElement('div');
+      thumbsEl.className = 'swiper project-swiper-thumbs';
+      const thumbsWrapper = document.createElement('div');
+      thumbsWrapper.className = 'swiper-wrapper';
+
+      images.forEach(function(img) {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        const thumb = new Image();
+        thumb.src = img.src;
+        thumb.setAttribute('aria-hidden', 'true');
+        slide.appendChild(thumb);
+        thumbsWrapper.appendChild(slide);
+      });
+
+      thumbsEl.appendChild(thumbsWrapper);
+      gallery.appendChild(thumbsEl);
+
+      // Must be visible before Swiper measures container dimensions
+      gallery.style.display = 'block';
+
+      thumbsInstance = new Swiper(thumbsEl, {
+        spaceBetween: 8,
+        slidesPerView: 'auto',
+        freeMode: { enabled: true },
+        watchSlidesProgress: true,
+      });
+    } else {
+      gallery.style.display = 'block';
+    }
+
+    // ── Init main swiper ─────────────────────────────────────────────────────
+    const mainCfg = {
+      spaceBetween: 10,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      keyboard: { enabled: true, onlyInViewport: true },
+    };
+    if (thumbsInstance) mainCfg.thumbs = { swiper: thumbsInstance };
+    new Swiper(mainEl, mainCfg);
+  }
+
+  function initProjectGalleries() {
+    document.querySelectorAll('.project-gallery').forEach(function(gallery) {
+      const imgs = Array.from(gallery.querySelectorAll('img'));
+      if (!imgs.length) return;
+
+      let pending = imgs.length;
+      const valid = [];
+
+      function onSettled() {
+        if (--pending > 0) return;
+        if (valid.length) buildProjectGallery(gallery, valid);
+      }
+
+      imgs.forEach(function(img) {
+        if (img.complete) {
+          if (img.naturalWidth) valid.push(img);
+          onSettled();
+        } else {
+          img.addEventListener('load', function() { valid.push(img); onSettled(); });
+          img.addEventListener('error', onSettled);
+        }
+      });
+    });
+  }
+
+  window.addEventListener('load', initProjectGalleries);
+
 })();
