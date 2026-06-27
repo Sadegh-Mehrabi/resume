@@ -62,6 +62,9 @@
 								<i class="bi bi-chevron-down toggle-dropdown"></i
 							></a>
 							<ul>
+								<li class="nav-dropdown-label">
+									<i class="bi bi-cpu-fill"></i> Embedded
+								</li>
 								<li>
 									<a href="#mobile-mapping-system">Mobile mapping system</a>
 								</li>
@@ -73,6 +76,12 @@
 									<a href="#ev-onboard-converter">EV onboard converter</a>
 								</li>
 								<li><a href="#ahrs-system">AHRS</a></li>
+								<li class="nav-dropdown-label">
+									<i class="bi bi-code-slash"></i> Software
+								</li>
+								<li><a href="#desktop-monitor-app">Device Monitor App</a></li>
+								<li><a href="#device-config-api">Config API Service</a></li>
+								<li><a href="#sensor-data-tool">Sensor Data Tool</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -188,9 +197,9 @@
 
 								<div class="profile-actions">
 									<a
-										href="assets/download/Sadegh.Mehrabi.CV.pdf"
+										href="assets/download/Sadegh.Mehrabi.CV-Embedded.pdf"
 										class="btn-primary"
-										download="Sadegh.Mehrabi.CV.pdf"
+										download="Sadegh.Mehrabi.CV-Embedded.pdf"
 										target="_blank"
 										rel="noopener noreferrer"
 										><i class="bi bi-download"></i> Download Resume</a
@@ -642,575 +651,976 @@
 				</div>
 
 				<div class="container">
-					<div class="projects-stack">
-						<article
-							id="mobile-mapping-system"
-							class="project-card"
-							data-aos="fade-up"
-							data-aos-delay="100"
-						>
-							<div class="project-card__inner">
-								<div class="project-card__content">
-									<div class="project-card__meta">
-										<span class="project-card__year">2025</span>
-										<span class="project-card__tag"
-											>Embedded · Desktop · Hardware</span
-										>
-									</div>
-									<h3 class="project-card__title">Mobile mapping system</h3>
-									<div class="project-card__body">
-										<p>
-											Experienced as a <strong>Firmware Developer</strong>,
-											<strong>Desktop Application Developer</strong>, and
-											<strong>Hardware Team Lead</strong> in the development of
-											a high-precision real-time aerial mapping and navigation
-											system based on dual-core
-											<strong>STM32H7</strong> microcontrollers. Developed
-											embedded firmware using <strong>FreeRTOS</strong> with
-											more than 30 concurrent real-time tasks executing under
-											microsecond-level timing constraints. Integrated multiple
-											sensors including <strong>accelerometers</strong>,
-											<strong>gyroscopes</strong>,
-											<strong>magnetometers</strong>,
-											<strong>barometers</strong>, and dual
-											<strong>GNSS</strong> modules to achieve accurate
-											positioning and orientation estimation for aerial mapping
-											applications.
-										</p>
-										<p>
-											Implemented high-speed interrupt-based data acquisition
-											and synchronized sensor logging to SD card storage,
-											alongside external flash memory management for system
-											configuration and parameters. Designed and integrated
-											communication interfaces including
-											<strong>Bluetooth</strong>, <strong>Wi-Fi</strong>, and
-											<strong>Ethernet (LAN)</strong> for real-time connectivity
-											and data transfer. Developed precise multi-camera
-											synchronization and triggering mechanisms supporting up to
-											<strong>6 simultaneous cameras</strong> for aerial
-											photogrammetry and 2D mapping generation.
-										</p>
-										<p>
-											In parallel, developed Windows desktop applications using
-											<strong>.NET Blazor</strong>, <strong>C#</strong>,
-											<strong>JavaScript</strong>, <strong>HTML/CSS</strong>,
-											and <strong>SQLite</strong> for real-time monitoring,
-											visualization, processing, and analysis of sensor and
-											navigation data. Also led hardware development activities
-											including system architecture, hardware integration,
-											debugging, and coordination of embedded hardware design
-											tasks, with strong focus on real-time reliability,
-											synchronization accuracy, and high-performance system
-											operation.
-										</p>
-									</div>
-									<div class="project-gallery">
-										<img
-											src="assets/img/projects/mobile-mapping-system/img-1.jpg"
-											alt="Mobile mapping system – overview"
-										/>
-										<img
-											src="assets/img/projects/mobile-mapping-system/img-2.jpg"
-											alt="Mobile mapping system – overview"
-										/>
-										<img
-											src="assets/img/projects/mobile-mapping-system/img-3.jpg"
-											alt="Mobile mapping system – PCB"
-										/>
-										<img
-											src="assets/img/projects/mobile-mapping-system/img-4.jpg"
-											alt="Mobile mapping system – PCB"
-										/>
-										<img
-											src="assets/img/projects/mobile-mapping-system/img-5.jpg"
-											alt="Mobile mapping system – desktop application"
-										/>
-										<img
-											src="assets/img/projects/mobile-mapping-system/img-6.jpg"
-											alt="Mobile mapping system – desktop application"
-										/>
-										<img
-											src="assets/img/projects/mobile-mapping-system/img-7.jpg"
-											alt="Mobile mapping system – desktop application"
-										/>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article
-							id="medical-auto-sampler"
-							class="project-card"
-							data-aos="fade-up"
-							data-aos-delay="200"
-						>
-							<div class="project-card__inner">
-								<div class="project-card__content">
-									<div class="project-card__meta">
-										<span class="project-card__year">2024</span>
-										<span class="project-card__tag"
-											>Medical · Firmware · Hardware · IEC 62304</span
-										>
-									</div>
-									<h3 class="project-card__title">
-										Medical Auto Sampler system aligned with IEC 62304
-									</h3>
-									<div class="project-card__body">
-										<p>
-											Worked as <strong>Firmware Developer</strong> and
-											<strong>Hardware Designer</strong> in the development of
-											an automated medical autosampler system for laboratory
-											blood sample processing. Designed the embedded hardware
-											and developed firmware in
-											<strong>Embedded C++</strong> based on
-											<strong>STM32F4</strong> microcontrollers using
-											<strong>FreeRTOS</strong> for reliable real-time
-											operation. The system included a custom mechanical
-											platform capable of holding up to
-											<strong>30 blood sample tubes</strong> and performing
-											fully automated sample handling workflows.
-										</p>
-										<p>
-											Integrated a <strong>touchscreen</strong> user interface
-											and <strong>USB HID keyboard</strong> connectivity,
-											allowing operators to configure sample quantities and
-											control the sampling process efficiently. Implemented
-											<strong>RS232</strong> communication with
-											<strong>ProLYTE</strong> medical analysis devices,
-											enabling automated command transmission, synchronization
-											with sampling operations, and retrieval of analysis
-											results directly from the laboratory equipment. Developed
-											reliable data management functionality with storage
-											capacity for up to
-											<strong>300 patient records</strong> and test results.
-										</p>
-										<p>
-											The project required robust real-time task management,
-											hardware–software integration, and stable serial
-											communication to ensure accurate and uninterrupted medical
-											laboratory operation. Development practices were aligned
-											with <strong>IEC 62304</strong> expectations for medical
-											device software lifecycle processes. The system was
-											successfully manufactured and deployed in large quantities
-											for laboratory and medical diagnostic environments.
-										</p>
-									</div>
-									<div class="project-gallery">
-										<img
-											src="assets/img/projects/medical-auto-sampler/img-1.jpg"
-											alt="Medical auto sampler – device overview"
-										/>
-										<img
-											src="assets/img/projects/medical-auto-sampler/img-2.jpg"
-											alt="Medical auto sampler – device overview"
-										/>
-										<img
-											src="assets/img/projects/medical-auto-sampler/img-3.jpg"
-											alt="Medical auto sampler – PCB layout"
-										/>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article
-							id="throttle-control-system"
-							class="project-card"
-							data-aos="fade-up"
-							data-aos-delay="200"
-						>
-							<div class="project-card__inner">
-								<div class="project-card__content">
-									<div class="project-card__meta">
-										<span class="project-card__year">2024</span>
-										<span class="project-card__tag"
-											>Aerospace · Firmware · Hardware · FreeRTOS</span
-										>
-									</div>
-									<h3 class="project-card__title">
-										Electronic Throttle Control System (Aircraft Engine Test
-										Bench)
-									</h3>
-									<div class="project-card__body">
-										<p>
-											Developed an
-											<strong>electronic throttle control system</strong> for
-											<strong>aircraft engine test bench</strong> applications.
-											Designed system hardware including
-											<strong>schematics and PCB layout</strong>, and
-											implemented embedded firmware in
-											<strong>Embedded C++</strong> and
-											<strong>FreeRTOS</strong> for
-											<strong>real-time control</strong> and
-											<strong>data acquisition</strong>.
-										</p>
-										<p>
-											Implemented processing of
-											<strong>throttle position data</strong> using
-											<strong>high-precision angle sensors</strong>, supporting
-											<strong>multiple operating modes</strong> via
-											<strong>digital I/O</strong>.
-										</p>
-										<p>
-											Developed <strong>Ethernet communication</strong> using
-											<strong>Modbus TCP</strong> for command, control, and
-											status monitoring between the throttle system and test
-											infrastructure.
-										</p>
-									</div>
-									<div class="project-gallery">
-										<img
-											src="assets/img/projects/throttle-system/img-1.jpg"
-											alt="Throttle system – system overview"
-										/>
-										<img
-											src="assets/img/projects/throttle-system/img-2.jpg"
-											alt="Throttle system  – system overview"
-										/>
-										<img
-											src="assets/img/projects/throttle-system/img-3.jpg"
-											alt="Throttle system  – hardware board"
-										/>
-										<img
-											src="assets/img/projects/throttle-system/img-4.jpg"
-											alt="Throttle system  – hardware board"
-										/>
-										<img
-											src="assets/img/projects/throttle-system/img-5.jpg"
-											alt="Throttle system  – PCB"
-										/>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article
-							id="ev-converter"
-							class="project-card"
-							data-aos="fade-up"
-							data-aos-delay="400"
-						>
-							<div class="project-card__inner">
-								<div class="project-card__content">
-									<div class="project-card__meta">
-										<span class="project-card__year">2023</span>
-										<span class="project-card__tag"
-											>Automotive · Power Electronics · Firmware</span
-										>
-									</div>
-									<h3 class="project-card__title">
-										Automotive Isolated DC/DC Converter (2.4 kW, 300–400 V to 12
-										V, 200A)
-									</h3>
-									<div class="project-card__body">
-										<p>
-											Developed an
-											<strong>
-												automotive-grade isolated DC/DC converter</strong
+					<!-- Embedded Projects Group -->
+					<div class="projects-group projects-group--embedded">
+						<div class="projects-group__header" data-aos="fade-up">
+							<h3 class="projects-group__title">Embedded Projects</h3>
+							<span class="projects-group__count">7 projects</span>
+						</div>
+						<div class="projects-stack">
+							<article
+								id="mobile-mapping-system"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="100"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2025</span>
+											<span class="project-card__tag"
+												>Embedded · Desktop · Hardware</span
 											>
-											for EV applications. Designed full power electronics
-											hardware including schematics, power stage architecture,
-											transformer and inductor design, simulations, and 8-layer
-											PCB layout with focus on
-											<strong>EMC/EMI/ESD </strong> compliance (<strong
-												>ISO 7637</strong
-											>, <strong>ISO 16750</strong>) and functional safety
-											considerations aligned with
-											<strong>ISO 26262</strong> principles requirements for
-											automotive environments.
-										</p>
-
-										<p>
-											Implemented embedded control firmware on
-											<strong>TI C2000 </strong>microcontrollers using a
-											bare-metal architecture for real-time power conversion
-											control. Developed and tuned
-											<strong> digital PID control </strong> loops for voltage
-											and current regulation in high-power switching operation.
-											Utilized
-											<strong>Phase-Shifted Full-Bridge (PSFB) </strong>topology
-											for isolated DC/DC conversion.
-										</p>
-
-										<p>
-											Integrated <strong>CAN 2.0 </strong> communication for
-											system-level monitoring and control.
-										</p>
-
-										<p>
-											Developed a desktop test and debugging application
-											interfacing with a CAN gateway for system validation and
-											diagnostics.
-										</p>
-									</div>
-									<div class="project-gallery">
-										<img
-											src="assets/img/projects/ev-converter/img-1.jpg"
-											alt="EV converter – product"
-										/>
-										<img
-											src="assets/img/projects/ev-converter/img-2.jpg"
-											alt="EV converter – board"
-										/>
-										<img
-											src="assets/img/projects/ev-converter/img-3.jpg"
-											alt="EV converter – board"
-										/>
-										<img
-											src="assets/img/projects/ev-converter/img-4.jpg"
-											alt="EV converter – board"
-										/>
-										<img
-											src="assets/img/projects/ev-converter/img-5.jpg"
-											alt="EV converter – 8-layer PCB"
-										/>
-										<img
-											src="assets/img/projects/ev-converter/img-6.jpg"
-											alt="EV converter – test setup"
-										/>
-										<img
-											src="assets/img/projects/ev-converter/img-7.jpg"
-											alt="EV converter – parctical test"
-										/>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article
-							id="arinc429-converter"
-							class="project-card"
-							data-aos="fade-up"
-							data-aos-delay="300"
-						>
-							<div class="project-card__inner">
-								<div class="project-card__content">
-									<div class="project-card__meta">
-										<span class="project-card__year">2023</span>
-										<span class="project-card__tag"
-											>Aerospace · Firmware · Hardware</span
-										>
-									</div>
-									<h3 class="project-card__title">ARINC429 converter system</h3>
-									<div class="project-card__body">
-										<p>
-											Worked as <strong>Firmware Developer</strong> and
-											<strong>Hardware Designer</strong> in the complete
-											development of a high-speed <strong>ARINC429</strong> to
-											<strong>Modbus TCP</strong> protocol converter for
-											aerospace applications in
-											<strong>Embedded C++</strong> using
-											<strong>STM32H7</strong> microcontrollers. Designed the
-											hardware architecture, schematics, and embedded firmware
-											for a real-time communication system capable of
-											interfacing directly with aircraft ARINC429 buses. The
-											system supported
-											<strong>32 independent ARINC429 receive channels</strong>
-											and <strong>16 transmit channels</strong>, allowing
-											simultaneous communication with multiple aircraft
-											subsystems and engine control units.
-										</p>
-										<p>
-											Implemented high-performance bidirectional data conversion
-											between ARINC429 and Modbus TCP over
-											<strong>100 Mbps Ethernet</strong>, enabling real-time
-											data exchange between desktop software and aircraft
-											engines. Developed the firmware using
-											<strong>FreeRTOS</strong> with approximately
-											<strong>25 concurrent real-time tasks</strong>, with
-											strong focus on deterministic execution, low-latency
-											communication, and zero data loss operation.
-										</p>
-										<p>
-											Designed the system to handle continuous high-speed data
-											streams reliably under strict real-time constraints,
-											ensuring robust synchronization and stable operation in
-											mission-critical aerospace environments.
-										</p>
-									</div>
-									<div class="project-gallery">
-										<img
-											src="assets/img/projects/arinc429-converter/img-1.jpg"
-											alt="ARINC429 converter – system overview"
-										/>
-										<img
-											src="assets/img/projects/arinc429-converter/img-2.jpg"
-											alt="ARINC429 converter – hardware board"
-										/>
-										<img
-											src="assets/img/projects/arinc429-converter/img-3.jpg"
-											alt="ARINC429 converter – PCB"
-										/>
+										</div>
+										<h3 class="project-card__title">Mobile mapping system</h3>
+										<div class="project-card__body">
+											<p>
+												Experienced as a <strong>Firmware Developer</strong>,
+												<strong>Desktop Application Developer</strong>, and
+												<strong>Hardware Team Lead</strong> in the development
+												of a high-precision real-time aerial mapping and
+												navigation system based on dual-core
+												<strong>STM32H7</strong> microcontrollers. Developed
+												embedded firmware using <strong>FreeRTOS</strong> with
+												more than 30 concurrent real-time tasks executing under
+												microsecond-level timing constraints. Integrated
+												multiple sensors including
+												<strong>accelerometers</strong>,
+												<strong>gyroscopes</strong>,
+												<strong>magnetometers</strong>,
+												<strong>barometers</strong>, and dual
+												<strong>GNSS</strong> modules to achieve accurate
+												positioning and orientation estimation for aerial
+												mapping applications.
+											</p>
+											<p>
+												Implemented high-speed interrupt-based data acquisition
+												and synchronized sensor logging to SD card storage,
+												alongside external flash memory management for system
+												configuration and parameters. Designed and integrated
+												communication interfaces including
+												<strong>Bluetooth</strong>, <strong>Wi-Fi</strong>, and
+												<strong>Ethernet (LAN)</strong> for real-time
+												connectivity and data transfer. Developed precise
+												multi-camera synchronization and triggering mechanisms
+												supporting up to
+												<strong>6 simultaneous cameras</strong> for aerial
+												photogrammetry and 2D mapping generation.
+											</p>
+											<p>
+												In parallel, developed Windows desktop applications
+												using
+												<strong>.NET Blazor</strong>, <strong>C#</strong>,
+												<strong>JavaScript</strong>, <strong>HTML/CSS</strong>,
+												and <strong>SQLite</strong> for real-time monitoring,
+												visualization, processing, and analysis of sensor and
+												navigation data. Also led hardware development
+												activities including system architecture, hardware
+												integration, debugging, and coordination of embedded
+												hardware design tasks, with strong focus on real-time
+												reliability, synchronization accuracy, and
+												high-performance system operation.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/mobile-mapping-system/img-1.jpg"
+												alt="Mobile mapping system – overview"
+											/>
+											<img
+												src="assets/img/projects/mobile-mapping-system/img-2.jpg"
+												alt="Mobile mapping system – overview"
+											/>
+											<img
+												src="assets/img/projects/mobile-mapping-system/img-3.jpg"
+												alt="Mobile mapping system – PCB"
+											/>
+											<img
+												src="assets/img/projects/mobile-mapping-system/img-4.jpg"
+												alt="Mobile mapping system – PCB"
+											/>
+											<img
+												src="assets/img/projects/mobile-mapping-system/img-5.jpg"
+												alt="Mobile mapping system – desktop application"
+											/>
+											<img
+												src="assets/img/projects/mobile-mapping-system/img-6.jpg"
+												alt="Mobile mapping system – desktop application"
+											/>
+											<img
+												src="assets/img/projects/mobile-mapping-system/img-7.jpg"
+												alt="Mobile mapping system – desktop application"
+											/>
+										</div>
 									</div>
 								</div>
-							</div>
-						</article>
+							</article>
 
-						<article
-							id="ev-onboard-converter"
-							class="project-card"
-							data-aos="fade-up"
-							data-aos-delay="400"
-						>
-							<div class="project-card__inner">
-								<div class="project-card__content">
-									<div class="project-card__meta">
-										<span class="project-card__year">2022</span>
-										<span class="project-card__tag"
-											>Automotive · Power Electronics · Firmware</span
-										>
-									</div>
-									<h3 class="project-card__title">
-										On board converter system for Electric Vehicle
-									</h3>
-									<div class="project-card__body">
-										<p>
-											Worked as <strong>Embedded Software Developer</strong> and
-											<strong>Hardware Designer</strong> in the development of
-											an automotive-grade EV charger supporting single-phase
-											(<strong>3.3 kW</strong>) and three-phase (<strong
-												>10 kW</strong
-											>) operation. Designed full power electronics hardware
-											including schematic design, transformer/inductor
-											calculations, control stage architecture, simulation, and
-											<strong>8-layer PCB layout</strong> with focus on
-											EMC/EMI/ESD compliance (<strong>ISO 7637</strong>,
-											<strong>ISO 16750</strong>) and functional safety
-											considerations aligned with
-											<strong>ISO 26262</strong> principles.
-										</p>
-										<p>
-											Implemented embedded control firmware in
-											<strong>Embedded C++</strong> on
-											<strong>TI C2000</strong> microcontrollers using
-											bare-metal architecture for deterministic real-time
-											performance. Developed and tuned digital control
-											algorithms including <strong>Adaptive PID</strong> for
-											power regulation, applying advanced topologies such as
-											<strong>Phase-Shifted Full-Bridge (PSFB)</strong> and
-											<strong>Interleaved PFC</strong> for efficiency and
-											thermal optimization. Integrated
-											<strong>CAN 2.0</strong> communication (<strong
-												>ISO 11898</strong
-											>) for real-time vehicle–charger interaction and system
-											monitoring.
-										</p>
-										<p>
-											Additionally developed a
-											<strong>Qt Widgets</strong> desktop application for
-											testing, debugging, and validation via serial-to-CAN
-											interface. The project required end-to-end integration of
-											embedded control, power electronics, and communication
-											systems for high-reliability automotive EV charging
-											systems.
-										</p>
-									</div>
-									<div class="project-gallery">
-										<img
-											src="assets/img/projects/ev-onboard-converter/img-1.jpg"
-											alt="EV onboard converter – product"
-										/>
-										<img
-											src="assets/img/projects/ev-onboard-converter/img-2.jpg"
-											alt="EV onboard converter – board"
-										/>
-										<img
-											src="assets/img/projects/ev-onboard-converter/img-3.jpg"
-											alt="EV onboard converter – board"
-										/>
-										<img
-											src="assets/img/projects/ev-onboard-converter/img-4.jpg"
-											alt="EV onboard converter – board"
-										/>
-										<img
-											src="assets/img/projects/ev-onboard-converter/img-5.jpg"
-											alt="EV onboard converter – 8-layer PCB"
-										/>
-										<img
-											src="assets/img/projects/ev-onboard-converter/img-6.jpg"
-											alt="EV onboard converter – test setup"
-										/>
-										<img
-											src="assets/img/projects/ev-onboard-converter/img-7.jpg"
-											alt="EV onboard converter – parctical test"
-										/>
+							<article
+								id="medical-auto-sampler"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2024</span>
+											<span class="project-card__tag"
+												>Medical · Firmware · Hardware · IEC 62304</span
+											>
+										</div>
+										<h3 class="project-card__title">
+											Medical Auto Sampler system aligned with IEC 62304
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Worked as <strong>Firmware Developer</strong> and
+												<strong>Hardware Designer</strong> in the development of
+												an automated medical autosampler system for laboratory
+												blood sample processing. Designed the embedded hardware
+												and developed firmware in
+												<strong>Embedded C++</strong> based on
+												<strong>STM32F4</strong> microcontrollers using
+												<strong>FreeRTOS</strong> for reliable real-time
+												operation. The system included a custom mechanical
+												platform capable of holding up to
+												<strong>30 blood sample tubes</strong> and performing
+												fully automated sample handling workflows.
+											</p>
+											<p>
+												Integrated a <strong>touchscreen</strong> user interface
+												and <strong>USB HID keyboard</strong> connectivity,
+												allowing operators to configure sample quantities and
+												control the sampling process efficiently. Implemented
+												<strong>RS232</strong> communication with
+												<strong>ProLYTE</strong> medical analysis devices,
+												enabling automated command transmission, synchronization
+												with sampling operations, and retrieval of analysis
+												results directly from the laboratory equipment.
+												Developed reliable data management functionality with
+												storage capacity for up to
+												<strong>300 patient records</strong> and test results.
+											</p>
+											<p>
+												The project required robust real-time task management,
+												hardware–software integration, and stable serial
+												communication to ensure accurate and uninterrupted
+												medical laboratory operation. Development practices were
+												aligned with <strong>IEC 62304</strong> expectations for
+												medical device software lifecycle processes. The system
+												was successfully manufactured and deployed in large
+												quantities for laboratory and medical diagnostic
+												environments.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/medical-auto-sampler/img-1.jpg"
+												alt="Medical auto sampler – device overview"
+											/>
+											<img
+												src="assets/img/projects/medical-auto-sampler/img-2.jpg"
+												alt="Medical auto sampler – device overview"
+											/>
+											<img
+												src="assets/img/projects/medical-auto-sampler/img-3.jpg"
+												alt="Medical auto sampler – PCB layout"
+											/>
+										</div>
 									</div>
 								</div>
-							</div>
-						</article>
+							</article>
 
-						<article
-							id="ahrs-system"
-							class="project-card"
-							data-aos="fade-up"
-							data-aos-delay="500"
-						>
-							<div class="project-card__inner">
-								<div class="project-card__content">
-									<div class="project-card__meta">
-										<span class="project-card__year">2021</span>
-										<span class="project-card__tag"
-											>Navigation · Sensor Fusion · Firmware</span
-										>
-									</div>
-									<h3 class="project-card__title">
-										Attitude and Heading Reference System (AHRS)
-									</h3>
-									<div class="project-card__body">
-										<p>
-											Worked as <strong>Firmware Developer</strong> and
-											<strong>Hardware Designer</strong> in the development of a
-											high-precision <strong>AHRS</strong> (Attitude and Heading
-											Reference System) for real-time orientation and motion
-											estimation applications. Designed the embedded hardware
-											and developed firmware using
-											<strong>Embedded C</strong> and
-											<strong>Bare-Metal</strong> programming for sensor
-											acquisition, signal processing, and real-time attitude
-											estimation using gyroscope, accelerometer, and
-											magnetometer sensor fusion.
-										</p>
-										<p>
-											Implemented advanced estimation and filtering algorithms
-											including <strong>Kalman Filter</strong>–based approaches
-											to accurately calculate <strong>Euler angles</strong>,
-											<strong>quaternions</strong>, and angular velocity under
-											dynamic operating conditions. Developed complex
-											calibration and compensation algorithms for sensor
-											alignment, bias correction, and magnetic calibration to
-											improve long-term stability and measurement accuracy.
-											Designed and integrated desktop software for real-time
-											data visualization, logging, monitoring, and execution of
-											calibration procedures through direct hardware
-											communication.
-										</p>
-										<p>
-											Achieved high-accuracy orientation estimation with roll
-											and pitch accuracy reaching <strong>0.1°</strong> and yaw
-											(heading) accuracy of <strong>0.5°</strong>. The project
-											required strong expertise in embedded systems,
-											mathematical modeling, control systems, real-time signal
-											processing, and hardware–software integration.
-										</p>
-									</div>
-									<div class="project-gallery">
-										<img
-											src="assets/img/projects/ahrs-system/img-1.jpg"
-											alt="AHRS –  product"
-										/>
-										<img
-											src="assets/img/projects/ahrs-system/img-2.jpg"
-											alt="AHRS – board"
-										/>
-										<img
-											src="assets/img/projects/ahrs-system/img-3.jpg"
-											alt="AHRS – board"
-										/>
+							<article
+								id="throttle-control-system"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2024</span>
+											<span class="project-card__tag"
+												>Aerospace · Firmware · Hardware · FreeRTOS</span
+											>
+										</div>
+										<h3 class="project-card__title">
+											Electronic Throttle Control System (Aircraft Engine Test
+											Bench)
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Developed an
+												<strong>electronic throttle control system</strong> for
+												<strong>aircraft engine test bench</strong>
+												applications. Designed system hardware including
+												<strong>schematics and PCB layout</strong>, and
+												implemented embedded firmware in
+												<strong>Embedded C++</strong> and
+												<strong>FreeRTOS</strong> for
+												<strong>real-time control</strong> and
+												<strong>data acquisition</strong>.
+											</p>
+											<p>
+												Implemented processing of
+												<strong>throttle position data</strong> using
+												<strong>high-precision angle sensors</strong>,
+												supporting <strong>multiple operating modes</strong> via
+												<strong>digital I/O</strong>.
+											</p>
+											<p>
+												Developed <strong>Ethernet communication</strong> using
+												<strong>Modbus TCP</strong> for command, control, and
+												status monitoring between the throttle system and test
+												infrastructure.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/throttle-system/img-1.jpg"
+												alt="Throttle system – system overview"
+											/>
+											<img
+												src="assets/img/projects/throttle-system/img-2.jpg"
+												alt="Throttle system  – system overview"
+											/>
+											<img
+												src="assets/img/projects/throttle-system/img-3.jpg"
+												alt="Throttle system  – hardware board"
+											/>
+											<img
+												src="assets/img/projects/throttle-system/img-4.jpg"
+												alt="Throttle system  – hardware board"
+											/>
+											<img
+												src="assets/img/projects/throttle-system/img-5.jpg"
+												alt="Throttle system  – PCB"
+											/>
+										</div>
 									</div>
 								</div>
-							</div>
-						</article>
+							</article>
+
+							<article
+								id="ev-converter"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="400"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2023</span>
+											<span class="project-card__tag"
+												>Automotive · Power Electronics · Firmware</span
+											>
+										</div>
+										<h3 class="project-card__title">
+											Automotive Isolated DC/DC Converter (2.4 kW, 300–400 V to
+											12 V, 200A)
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Developed an
+												<strong>
+													automotive-grade isolated DC/DC converter</strong
+												>
+												for EV applications. Designed full power electronics
+												hardware including schematics, power stage architecture,
+												transformer and inductor design, simulations, and
+												8-layer PCB layout with focus on
+												<strong>EMC/EMI/ESD </strong> compliance (<strong
+													>ISO 7637</strong
+												>, <strong>ISO 16750</strong>) and functional safety
+												considerations aligned with
+												<strong>ISO 26262</strong> principles requirements for
+												automotive environments.
+											</p>
+
+											<p>
+												Implemented embedded control firmware on
+												<strong>TI C2000 </strong>microcontrollers using a
+												bare-metal architecture for real-time power conversion
+												control. Developed and tuned
+												<strong> digital PID control </strong> loops for voltage
+												and current regulation in high-power switching
+												operation. Utilized
+												<strong>Phase-Shifted Full-Bridge (PSFB) </strong
+												>topology for isolated DC/DC conversion.
+											</p>
+
+											<p>
+												Integrated <strong>CAN 2.0 </strong> communication for
+												system-level monitoring and control.
+											</p>
+
+											<p>
+												Developed a desktop test and debugging application
+												interfacing with a CAN gateway for system validation and
+												diagnostics.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/ev-converter/img-1.jpg"
+												alt="EV converter – product"
+											/>
+											<img
+												src="assets/img/projects/ev-converter/img-2.jpg"
+												alt="EV converter – board"
+											/>
+											<img
+												src="assets/img/projects/ev-converter/img-3.jpg"
+												alt="EV converter – board"
+											/>
+											<img
+												src="assets/img/projects/ev-converter/img-4.jpg"
+												alt="EV converter – board"
+											/>
+											<img
+												src="assets/img/projects/ev-converter/img-5.jpg"
+												alt="EV converter – 8-layer PCB"
+											/>
+											<img
+												src="assets/img/projects/ev-converter/img-6.jpg"
+												alt="EV converter – test setup"
+											/>
+											<img
+												src="assets/img/projects/ev-converter/img-7.jpg"
+												alt="EV converter – parctical test"
+											/>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article
+								id="arinc429-converter"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2023</span>
+											<span class="project-card__tag"
+												>Aerospace · Firmware · Hardware</span
+											>
+										</div>
+										<h3 class="project-card__title">
+											ARINC429 converter system
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Worked as <strong>Firmware Developer</strong> and
+												<strong>Hardware Designer</strong> in the complete
+												development of a high-speed <strong>ARINC429</strong> to
+												<strong>Modbus TCP</strong> protocol converter for
+												aerospace applications in
+												<strong>Embedded C++</strong> using
+												<strong>STM32H7</strong> microcontrollers. Designed the
+												hardware architecture, schematics, and embedded firmware
+												for a real-time communication system capable of
+												interfacing directly with aircraft ARINC429 buses. The
+												system supported
+												<strong
+													>32 independent ARINC429 receive channels</strong
+												>
+												and <strong>16 transmit channels</strong>, allowing
+												simultaneous communication with multiple aircraft
+												subsystems and engine control units.
+											</p>
+											<p>
+												Implemented high-performance bidirectional data
+												conversion between ARINC429 and Modbus TCP over
+												<strong>100 Mbps Ethernet</strong>, enabling real-time
+												data exchange between desktop software and aircraft
+												engines. Developed the firmware using
+												<strong>FreeRTOS</strong> with approximately
+												<strong>25 concurrent real-time tasks</strong>, with
+												strong focus on deterministic execution, low-latency
+												communication, and zero data loss operation.
+											</p>
+											<p>
+												Designed the system to handle continuous high-speed data
+												streams reliably under strict real-time constraints,
+												ensuring robust synchronization and stable operation in
+												mission-critical aerospace environments.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/arinc429-converter/img-1.jpg"
+												alt="ARINC429 converter – system overview"
+											/>
+											<img
+												src="assets/img/projects/arinc429-converter/img-2.jpg"
+												alt="ARINC429 converter – hardware board"
+											/>
+											<img
+												src="assets/img/projects/arinc429-converter/img-3.jpg"
+												alt="ARINC429 converter – PCB"
+											/>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article
+								id="ev-onboard-converter"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="400"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2022</span>
+											<span class="project-card__tag"
+												>Automotive · Power Electronics · Firmware</span
+											>
+										</div>
+										<h3 class="project-card__title">
+											On board converter system for Electric Vehicle
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Worked as
+												<strong>Embedded Software Developer</strong> and
+												<strong>Hardware Designer</strong> in the development of
+												an automotive-grade EV charger supporting single-phase
+												(<strong>3.3 kW</strong>) and three-phase (<strong
+													>10 kW</strong
+												>) operation. Designed full power electronics hardware
+												including schematic design, transformer/inductor
+												calculations, control stage architecture, simulation,
+												and <strong>8-layer PCB layout</strong> with focus on
+												EMC/EMI/ESD compliance (<strong>ISO 7637</strong>,
+												<strong>ISO 16750</strong>) and functional safety
+												considerations aligned with
+												<strong>ISO 26262</strong> principles.
+											</p>
+											<p>
+												Implemented embedded control firmware in
+												<strong>Embedded C++</strong> on
+												<strong>TI C2000</strong> microcontrollers using
+												bare-metal architecture for deterministic real-time
+												performance. Developed and tuned digital control
+												algorithms including <strong>Adaptive PID</strong> for
+												power regulation, applying advanced topologies such as
+												<strong>Phase-Shifted Full-Bridge (PSFB)</strong> and
+												<strong>Interleaved PFC</strong> for efficiency and
+												thermal optimization. Integrated
+												<strong>CAN 2.0</strong> communication (<strong
+													>ISO 11898</strong
+												>) for real-time vehicle–charger interaction and system
+												monitoring.
+											</p>
+											<p>
+												Additionally developed a
+												<strong>Qt Widgets</strong> desktop application for
+												testing, debugging, and validation via serial-to-CAN
+												interface. The project required end-to-end integration
+												of embedded control, power electronics, and
+												communication systems for high-reliability automotive EV
+												charging systems.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/ev-onboard-converter/img-1.jpg"
+												alt="EV onboard converter – product"
+											/>
+											<img
+												src="assets/img/projects/ev-onboard-converter/img-2.jpg"
+												alt="EV onboard converter – board"
+											/>
+											<img
+												src="assets/img/projects/ev-onboard-converter/img-3.jpg"
+												alt="EV onboard converter – board"
+											/>
+											<img
+												src="assets/img/projects/ev-onboard-converter/img-4.jpg"
+												alt="EV onboard converter – board"
+											/>
+											<img
+												src="assets/img/projects/ev-onboard-converter/img-5.jpg"
+												alt="EV onboard converter – 8-layer PCB"
+											/>
+											<img
+												src="assets/img/projects/ev-onboard-converter/img-6.jpg"
+												alt="EV onboard converter – test setup"
+											/>
+											<img
+												src="assets/img/projects/ev-onboard-converter/img-7.jpg"
+												alt="EV onboard converter – parctical test"
+											/>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article
+								id="ahrs-system"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="500"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2021</span>
+											<span class="project-card__tag"
+												>Navigation · Sensor Fusion · Firmware</span
+											>
+										</div>
+										<h3 class="project-card__title">
+											Attitude and Heading Reference System (AHRS)
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Worked as <strong>Firmware Developer</strong> and
+												<strong>Hardware Designer</strong> in the development of
+												a high-precision <strong>AHRS</strong> (Attitude and
+												Heading Reference System) for real-time orientation and
+												motion estimation applications. Designed the embedded
+												hardware and developed firmware using
+												<strong>Embedded C</strong> and
+												<strong>Bare-Metal</strong> programming for sensor
+												acquisition, signal processing, and real-time attitude
+												estimation using gyroscope, accelerometer, and
+												magnetometer sensor fusion.
+											</p>
+											<p>
+												Implemented advanced estimation and filtering algorithms
+												including <strong>Kalman Filter</strong>–based
+												approaches to accurately calculate
+												<strong>Euler angles</strong>,
+												<strong>quaternions</strong>, and angular velocity under
+												dynamic operating conditions. Developed complex
+												calibration and compensation algorithms for sensor
+												alignment, bias correction, and magnetic calibration to
+												improve long-term stability and measurement accuracy.
+												Designed and integrated desktop software for real-time
+												data visualization, logging, monitoring, and execution
+												of calibration procedures through direct hardware
+												communication.
+											</p>
+											<p>
+												Achieved high-accuracy orientation estimation with roll
+												and pitch accuracy reaching <strong>0.1°</strong> and
+												yaw (heading) accuracy of <strong>0.5°</strong>. The
+												project required strong expertise in embedded systems,
+												mathematical modeling, control systems, real-time signal
+												processing, and hardware–software integration.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/ahrs-system/img-1.jpg"
+												alt="AHRS –  product"
+											/>
+											<img
+												src="assets/img/projects/ahrs-system/img-2.jpg"
+												alt="AHRS – board"
+											/>
+											<img
+												src="assets/img/projects/ahrs-system/img-3.jpg"
+												alt="AHRS – board"
+											/>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
 					</div>
+					<!-- /projects-group (embedded) -->
+
+					<!-- Section Divider -->
+					<div class="projects-section-divider" data-aos="fade-up">
+						<span>Software Projects</span>
+					</div>
+
+					<!-- Software Projects Group -->
+					<div class="projects-group projects-group--software">
+						<div class="projects-group__header" data-aos="fade-up">
+							<h3 class="projects-group__title">Software Projects</h3>
+							<span class="projects-group__count">4 projects</span>
+						</div>
+						<div class="projects-stack">
+							<article
+								id="desktop-monitor-app"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="100"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2026</span>
+											<span class="project-card__tag"
+												>AEC · Desktop · C#/.NET · Unity 3D · MVVM ·Cloud ·
+												GraphQL · REST</span
+											>
+											<a
+												href="https://geovision.cloud/geovision-desktop-app/"
+												target="_blank"
+												class="project-cta-btn"
+												rel="noopener noreferrer"
+												><i class="bi bi-box-arrow-up-right"></i> View GeoVision
+												Platform</a
+											>
+										</div>
+										<h3 class="project-card__title">
+											Real-Time 3D Visualization Platform
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Worked as Project Lead, Software Architect, and
+												Full-Stack Developer in the development of
+												<strong>GeoVision</strong>, a cross-platform
+												<strong>3D visualization platform</strong> for the
+												<strong
+													>AEC (Architecture, Engineering, and
+													Construction)</strong
+												>
+												industry. Designed and implemented the full system
+												architecture and developed desktop applications for
+												<strong>Windows and macOS</strong> using
+												<strong>Unity</strong> with UI Toolkit.
+											</p>
+
+											<p>
+												Built a cloud-connected workflow using
+												<strong>RESTful APIs</strong> and
+												<strong>GraphQL</strong> to manage projects, versions,
+												and 3D model data. Developed integrations with
+												architectural tools including
+												<strong>Revit, Archicad, and Rhino</strong>, where
+												plugins export
+												<strong
+													>3D models and metadata (geometry, materials, and
+													version data)</strong
+												>
+												directly to a cloud-based platform for visualization and
+												collaboration.
+											</p>
+
+											<p>
+												Implemented a custom
+												<strong>real-time 3D rendering pipeline</strong> that
+												reconstructs models from cloud data by generating
+												<strong
+													>meshes, objects, and materials at runtime</strong
+												>, including development of
+												<strong>custom shaders per material type</strong> for
+												accurate visual representation. Designed and delivered
+												interactive features such as
+												<strong>Walkthrough navigation</strong>,
+												<strong>lighting tools</strong>, and
+												<strong>AI-assisted rendering</strong> to support
+												immersive design review workflows.
+											</p>
+
+											<p>
+												Responsible for <strong>system architecture</strong>,
+												<strong>3D engine development</strong>,
+												<strong>UI/UX design</strong>, and the complete
+												<strong>data processing pipeline</strong>. The product
+												is commercially deployed by a<strong> Swiss</strong>
+												company and is currently used globally by architects and
+												engineers for collaborative design and visualization.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/desktop-unity/img-1.jpg"
+												alt="GeoVision –  product"
+											/>
+											<img
+												src="assets/img/projects/desktop-unity/img-2.jpg"
+												alt="GeoVision – product"
+											/>
+											<img
+												src="assets/img/projects/desktop-unity/img-3.jpg"
+												alt="GeoVision – product"
+											/>
+											<img
+												src="assets/img/projects/desktop-unity/img-4.jpg"
+												alt="GeoVision – product"
+											/>
+											<img
+												src="assets/img/projects/desktop-unity/img-5.jpg"
+												alt="GeoVision – product"
+											/>
+											<img
+												src="assets/img/projects/desktop-unity/img-6.jpg"
+												alt="GeoVision – product"
+											/>
+											<img
+												src="assets/img/projects/desktop-unity/img-7.jpg"
+												alt="GeoVision – product"
+											/>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article
+								id="sensor-data-tool"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2025</span>
+											<span class="project-card__tag"
+												>.NET MAUI Blazor Hybrid · JavaScript · HTML · CSS ·
+												.NET8 · SQLite</span
+											>
+										</div>
+										<h3 class="project-card__title">
+											Real-Time Data Analysis & Mission Control Desktop Platform
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Developed a Windows desktop application for real-time
+												monitoring, data analysis, calibration, and
+												visualization of a high-precision aerial mapping system.
+												The software was designed to process logged mission data
+												and provide tools for post-mission analysis and system
+												evaluation.
+											</p>
+
+											<p>
+												Implemented data processing pipelines for reading and
+												analyzing logged sensor and navigation data, including
+												GNSS positioning, orientation data, and system status
+												information. Developed interactive visualization
+												features including real-time charts, statistical views,
+												and map-based display for mission replay and analysis.
+											</p>
+
+											<p>
+												Designed and implemented a calibration and configuration
+												interface that allows users to manage device settings,
+												review system health, and perform calibration workflows
+												through a unified user interface. Integrated map
+												visualization for displaying flight paths and geospatial
+												data during and after missions.
+											</p>
+
+											<p>
+												The application was built using
+												<strong>.NET MAUI Blazor Hybrid</strong>,
+												<strong>C#</strong>, <strong>JavaScript</strong>,
+												<strong>HTML/CSS</strong>, and <strong>SQLite</strong>.
+												It was developed as the main desktop control and
+												analysis tool for the system, with only minor
+												integration with the embedded hardware layer for data
+												acquisition.
+											</p>
+										</div>
+										<div class="project-video-gallery">
+											<video
+												autoplay
+												loop
+												muted
+												playsinline
+												controls
+												style="
+													width: 100%;
+													height: 100%;
+													object-fit: cover;
+													display: block;
+												"
+											>
+												<source
+													src="assets/img/projects/geovision-plugin/MAUI-App.mp4"
+													type="video/mp4"
+												/>
+											</video>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article
+								id="device-config-api"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2024</span>
+											<span class="project-card__tag"
+												>Revit API · Rhino API · REST API · .NET Core ·
+												SQLite</span
+											>
+											<a
+												href="https://geovision.cloud/bim-plugins/"
+												target="_blank"
+												class="project-cta-btn"
+												rel="noopener noreferrer"
+												><i class="bi bi-box-arrow-up-right"></i> View GeoVision
+												Plugins</a
+											>
+										</div>
+										<h3 class="project-card__title">
+											BIM Integration Plugins (Revit, Rhino)
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Worked as <strong>Software Architect</strong> and
+												<strong>Plugin Developer</strong> in the development of
+												plugins for <strong>Autodesk Revit, and Rhino</strong>.
+												Designed and developed the complete plugin architecture
+												and user interface, allowing users to upload BIM
+												projects, models, and version data directly from their
+												design software to the cloud.
+											</p>
+
+											<p>
+												Used the
+												<strong>Revit, and Rhino APIs</strong> to read model
+												geometry, materials, and project data. Connected the
+												plugins to cloud services using
+												<strong>RESTful APIs</strong> and
+												<strong>GraphQL</strong>, enabling reliable data
+												transfer between desktop applications and the server.
+											</p>
+
+											<p>
+												Implemented
+												<strong
+													>user authentication, authorization, and two-factor
+													authentication (2FA)</strong
+												>
+												to provide secure access to cloud services. The uploaded
+												models and metadata were then used by the
+												<strong>GeoVision</strong> desktop application for
+												real-time 3D visualization, model versioning, and
+												collaboration.
+											</p>
+										</div>
+										<div class="project-gallery">
+											<img
+												src="assets/img/projects/geovision-plugin/img-1.jpg"
+												alt="Plugin –  product"
+											/>
+											<img
+												src="assets/img/projects/geovision-plugin/img-2.jpg"
+												alt="Plugin – product"
+											/>
+											<img
+												src="assets/img/projects/geovision-plugin/img-3.jpg"
+												alt="Plugin – product"
+											/>
+											<img
+												src="assets/img/projects/geovision-plugin/img-4.jpg"
+												alt="Plugin – product"
+											/>
+											<img
+												src="assets/img/projects/geovision-plugin/img-5.jpg"
+												alt="Plugin – product"
+											/>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article
+								id="sensor-data-tool"
+								class="project-card"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<div class="project-card__inner">
+									<div class="project-card__content">
+										<div class="project-card__meta">
+											<span class="project-card__year">2024</span>
+											<span class="project-card__tag"
+												>Graphisoft Archicad API · REST API · .NET Core · C++ ·
+												SQLite</span
+											>
+											<a
+												href="https://geovision.cloud/bim-plugins/"
+												target="_blank"
+												class="project-cta-btn"
+												rel="noopener noreferrer"
+												><i class="bi bi-box-arrow-up-right"></i> View GeoVision
+												Plugins</a
+											>
+										</div>
+										<h3 class="project-card__title">
+											BIM Integration Plugins (Graphisoft Archicad)
+										</h3>
+										<div class="project-card__body">
+											<p>
+												Worked as <strong>Software Architect</strong> and
+												<strong>C++ Plugin Developer</strong> in the development
+												of a plugin for <strong>Graphisoft Archicad</strong>.
+												Designed and developed the complete plugin architecture
+												and user interface using the
+												<strong>Archicad C++ API</strong>, allowing users to
+												upload BIM projects, models, and version data directly
+												from Archicad to a cloud platform.
+											</p>
+
+											<p>
+												Implemented model and metadata extraction, project
+												management, and model versioning using the
+												<strong>Archicad API</strong>. Integrated the plugin
+												with cloud services through
+												<strong>RESTful APIs</strong> and
+												<strong>GraphQL</strong>, and implemented
+												<strong
+													>authentication, authorization, and two-factor
+													authentication (2FA)</strong
+												>
+												for secure access.
+											</p>
+
+											<p>
+												The uploaded BIM data was processed by the
+												<strong>GeoVision</strong> platform, enabling real-time
+												3D visualization, collaboration, and model review across
+												desktop applications.
+											</p>
+										</div>
+										<div class="project-video-gallery">
+											<video
+												autoplay
+												loop
+												muted
+												playsinline
+												controls
+												style="
+													width: 100%;
+													height: 100%;
+													object-fit: cover;
+													display: block;
+												"
+											>
+												<source
+													src="assets/img/projects/geovision-plugin/MAUI-WebView-APP.mp4"
+													type="video/mp4"
+												/>
+											</video>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- /projects-group (software) -->
 				</div>
 			</section>
 			<!-- /Projects Section -->

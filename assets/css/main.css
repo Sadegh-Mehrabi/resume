@@ -1845,6 +1845,28 @@ section,
   margin-top: 1.75rem;
 }
 
+/* Video-only gallery */
+.project-video-gallery {
+  margin-top: 1.75rem;
+  width: 100%;
+  height: 270px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--surface-color);
+  line-height: 0;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 84%);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 color-mix(in srgb, var(--contrast-color), transparent 94%);
+}
+
+/* Hide the mute/unmute button and volume slider — video has no audio */
+.project-video-gallery video::-webkit-media-controls-mute-button,
+.project-video-gallery video::-webkit-media-controls-volume-slider,
+.project-video-gallery video::-webkit-media-controls-volume-control-container {
+  display: none !important;
+}
+
 .project-swiper-main {
   width: 100%;
   height: 340px;
@@ -1915,4 +1937,299 @@ section,
     width: 60px;
     height: 44px;
   }
+}
+
+/*--------------------------------------------------------------
+# Projects — Group Headers & Section Divider
+--------------------------------------------------------------*/
+.projects-group {
+  margin-bottom: 2.5rem;
+}
+
+.projects-group:last-child {
+  margin-bottom: 0;
+}
+
+.projects-group__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projects-group__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.projects-group__count {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.projects-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 2.75rem 0;
+}
+
+/* Lines fade in from the outer edges and arrive at full strength near the badge */
+.projects-section-divider::before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    color-mix(in srgb, var(--accent-color), transparent 55%) 35%,
+    color-mix(in srgb, var(--accent-color), transparent 38%) 100%
+  );
+}
+
+.projects-section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    color-mix(in srgb, var(--accent-color), transparent 55%) 35%,
+    color-mix(in srgb, var(--accent-color), transparent 38%) 100%
+  );
+}
+
+/* Badge pill — styled as a deliberate section marker */
+.projects-section-divider span {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.35rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  white-space: nowrap;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  border-radius: 100px;
+  box-shadow:
+    0 0 22px color-mix(in srgb, var(--accent-color), transparent 84%),
+    inset 0 1px 0 color-mix(in srgb, var(--contrast-color), transparent 91%);
+}
+
+/* Decorative diamond markers flanking the label text */
+.projects-section-divider span::before,
+.projects-section-divider span::after {
+  content: "◆";
+  font-size: 0.38rem;
+  line-height: 1;
+  opacity: 0.65;
+}
+
+/* Nav dropdown — group category labels */
+.nav-dropdown-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px 5px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--accent-color);
+  pointer-events: none;
+  cursor: default;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  margin-top: 4px;
+}
+
+.nav-dropdown-label i {
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+/* First label sits at the top — no divider above it */
+.nav-dropdown-label:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+/* Nav dropdown — project item hierarchy */
+.navmenu .dropdown ul li:not(.nav-dropdown-label) {
+  min-width: 230px;
+}
+
+.navmenu .dropdown ul li:not(.nav-dropdown-label) a {
+  position: relative;
+  padding: 7px 18px 7px 34px;
+  font-size: 14px;
+}
+
+/* Small bullet prefix signals list membership under the group label */
+.navmenu .dropdown ul li:not(.nav-dropdown-label) a::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--nav-dropdown-color), transparent 55%);
+  transition: background 0.25s ease;
+}
+
+.navmenu .dropdown ul li:not(.nav-dropdown-label) a:hover::before,
+.navmenu .dropdown ul li:not(.nav-dropdown-label) a:focus::before {
+  background: var(--nav-hover-color);
+}
+
+/*--------------------------------------------------------------
+# Projects — Group Background Treatments
+--------------------------------------------------------------*/
+
+/*
+ * Embedded = primary, elevated. Uses --surface-color as the solid base
+ * (in a dark theme surface-color > background-color = visually raised).
+ * Accent-colour corner glow + accent border reinforce the primary status.
+ */
+.projects-group--embedded {
+  padding: 1.75rem;
+  border-radius: 24px;
+  margin-bottom: 0;
+  background:
+    radial-gradient(
+      ellipse 46% 28% at 100% 0%,
+      color-mix(in srgb, var(--accent-color), transparent 74%) 0%,
+      transparent 100%
+    ),
+    var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 74%);
+  box-shadow:
+    0 6px 36px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 color-mix(in srgb, var(--contrast-color), transparent 95%);
+}
+
+/*
+ * Software = secondary, green-toned. Same structural approach as Embedded
+ * (surface-color base + radial corner glow + border + shadow) but uses
+ * #10b981 (already in the design via the profile status-indicator) for
+ * the green accent. Glow placed at top-left to mirror Embedded's top-right.
+ */
+.projects-group--software {
+  padding: 1.75rem;
+  border-radius: 24px;
+  margin-bottom: 0;
+  background:
+    radial-gradient(
+      ellipse 46% 28% at 0% 0%,
+      color-mix(in srgb, #10b981, transparent 74%) 0%,
+      transparent 100%
+    ),
+    var(--surface-color);
+  border: 1px solid color-mix(in srgb, #10b981, transparent 74%);
+  box-shadow:
+    0 6px 36px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 color-mix(in srgb, var(--contrast-color), transparent 95%);
+}
+
+.projects-group--software .projects-group__count {
+  color: #10b981;
+  background: color-mix(in srgb, #10b981, transparent 88%);
+}
+
+.projects-group--software .projects-group__title {
+  color: var(--heading-color);
+}
+
+/* Software project cards — replace blue accent tints with green */
+.projects-group--software .project-card__inner {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--surface-color), #10b981 4%) 0%,
+    color-mix(in srgb, var(--surface-color), transparent 0%) 55%,
+    color-mix(in srgb, var(--background-color), var(--surface-color) 40%) 100%
+  );
+}
+
+.projects-group--software .project-card__inner::before {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #10b981, transparent 70%),
+    transparent 40%,
+    color-mix(in srgb, #10b981, transparent 85%)
+  );
+}
+
+.projects-group--software .project-card:hover .project-card__inner {
+  border-color: color-mix(in srgb, #10b981, transparent 65%);
+  box-shadow:
+    0 20px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 1px color-mix(in srgb, #10b981, transparent 80%),
+    0 0 40px color-mix(in srgb, #10b981, transparent 88%);
+}
+
+@media (max-width: 768px) {
+  .projects-group--embedded,
+  .projects-group--software {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+}
+
+/* Project card — CTA link button */
+.project-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  border-radius: 100px;
+  transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease,
+    box-shadow 0.22s ease, transform 0.18s ease;
+  white-space: nowrap;
+}
+
+.project-cta-btn i {
+  font-size: 0.8rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.project-cta-btn:hover {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 18px color-mix(in srgb, var(--accent-color), transparent 60%);
+  transform: translateY(-1px);
+}
+
+.project-cta-btn:hover i {
+  transform: translate(1px, -1px);
+}
+
+.project-cta-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
