@@ -302,6 +302,8 @@ h6 {
     font-size: 15px;
     text-transform: none;
     color: var(--nav-dropdown-color);
+    font-variant: normal;
+    font-feature-settings: "calt" 0, "ordn" 0;
   }
 
   .navmenu .dropdown ul a i {
@@ -2078,6 +2080,8 @@ section,
   position: relative;
   padding: 7px 18px 7px 34px;
   font-size: 14px;
+  font-variant: normal;
+  font-feature-settings: "calt" 0, "ordn" 0;
 }
 
 /* Small bullet prefix signals list membership under the group label */
